@@ -1,0 +1,361 @@
+/* ============================================================
+   CORNERSTONE DIGITAL — Global Responsive Overrides
+   Linked LAST on every page — wins the cascade over all
+   page-specific CSS.
+   ============================================================ */
+
+/* ============================================================
+   WORD-WRAP SAFETY
+   ============================================================ */
+h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* ============================================================
+   SECTION PADDING — tablet (≤768px)
+   Most sections hard-code padding-block: var(--space-8) = 128px.
+   Reduce to 64px at tablet, 48px at phone.
+   ============================================================ */
+@media (max-width: 768px) {
+  /* Home */
+  .home-about,
+  .feature-section,
+  .impact-section,
+  .services-section,
+  .process-section,
+  .team-section,
+  .testimonials-section,
+  .faq-section,
+  .blog-preview-section,
+  /* About */
+  .about-hero,
+  .mission-section,
+  .values-section,
+  .ceo-section,
+  .about-team,
+  .about-faq,
+  /* Services page */
+  .svc-section,
+  .services-faq,
+  /* Works page */
+  .projects-section,
+  /* Work Details */
+  .pd-section,
+  /* Blogs */
+  .blog-archive,
+  /* Contact */
+  .contact-section,
+  /* Legal */
+  .utility-section,
+  .utility-breadcrumb {
+    padding-block: var(--space-6); /* 64px */
+  }
+
+  /* Blog hero inner content */
+  .blog-hero__inner {
+    padding-block: var(--space-5) var(--space-6);
+  }
+
+  /* Blog hero min-height */
+  .blog-hero {
+    min-height: 65vh;
+  }
+
+  /* Work Details — internal spacing between main content and results */
+  .pd-content-wrap {
+    padding-bottom: var(--space-5);
+    margin-bottom: var(--space-5);
+    gap: var(--space-5);
+  }
+
+  .pd-results {
+    margin-bottom: var(--space-5);
+  }
+
+  .pd-cta {
+    padding-block: var(--space-4);
+    margin-bottom: var(--space-5);
+  }
+
+  .pd-review {
+    padding-bottom: var(--space-5);
+    gap: var(--space-4);
+  }
+
+  /* Contact — reduce large gaps */
+  .contact-wrap {
+    gap: var(--space-5);
+  }
+
+  .contact-header {
+    padding-bottom: var(--space-5);
+  }
+
+  /* About hero inner content gap */
+  .about-hero__inner {
+    gap: var(--space-4);
+  }
+
+  /* Home about inner gap */
+  .home-about__inner {
+    gap: var(--space-4);
+  }
+
+  /* Legal utility breadcrumb top */
+  .utility-breadcrumb {
+    padding-top: var(--space-5);
+    padding-bottom: var(--space-4);
+  }
+}
+
+/* ============================================================
+   SECTION PADDING — phone (≤480px)
+   ============================================================ */
+@media (max-width: 480px) {
+  /* Home */
+  .home-about,
+  .feature-section,
+  .impact-section,
+  .services-section,
+  .process-section,
+  .team-section,
+  .testimonials-section,
+  .faq-section,
+  .blog-preview-section,
+  /* About */
+  .about-hero,
+  .mission-section,
+  .values-section,
+  .ceo-section,
+  .about-team,
+  .about-faq,
+  /* Services */
+  .svc-section,
+  .services-faq,
+  /* Works */
+  .projects-section,
+  /* Work Details */
+  .pd-section,
+  /* Blogs */
+  .blog-archive,
+  /* Contact */
+  .contact-section {
+    padding-block: var(--space-5); /* 48px */
+  }
+
+  .blog-hero__inner {
+    padding-block: var(--space-4) var(--space-5);
+  }
+
+  .blog-hero {
+    min-height: 55vh;
+  }
+}
+
+/* ============================================================
+   HOME PAGE
+   ============================================================ */
+
+/* Impact stats: always stay 2-col inside the right panel */
+@media (max-width: 900px) {
+  .impact-section__right {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Feature cards: keep 2-col until very small screens */
+@media (max-width: 380px) {
+  .feature-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Brand marquee slight size reduction */
+@media (max-width: 480px) {
+  .brand-marquee__logo {
+    height: 18px;
+  }
+}
+
+/* ============================================================
+   ABOUT PAGE
+   ============================================================ */
+
+/* Hero: reduce top padding */
+@media (max-width: 900px) {
+  .about-hero__top {
+    gap: var(--space-4);
+  }
+
+  /* Banner full width — already 1-col; ensure aspect ratio */
+  .about-hero__banner {
+    max-height: 60vw;
+  }
+}
+
+/* Stats bottom row single-col on tiny phones */
+@media (max-width: 480px) {
+  .about-stat__number {
+    font-size: clamp(2rem, 10vw, 3.5rem);
+  }
+}
+
+/* ============================================================
+   SERVICES PAGE
+   ============================================================ */
+
+/* Service item: ensure list items have no horizontal overflow */
+@media (max-width: 600px) {
+  .svc-item__list {
+    padding-left: var(--space-3);
+  }
+
+  .svc-heading {
+    font-size: clamp(2.5rem, 12vw, 5rem);
+  }
+}
+
+/* ============================================================
+   WORKS / PROJECTS PAGE
+   ============================================================ */
+@media (max-width: 480px) {
+  .projects-heading {
+    font-size: clamp(2.5rem, 11vw, 4rem);
+  }
+
+  /* Tighten collection item padding */
+  .project-collection-item {
+    padding-block: var(--space-4);
+  }
+}
+
+/* ============================================================
+   WORK DETAILS PAGE
+   ============================================================ */
+@media (max-width: 600px) {
+  .pd-title {
+    font-size: clamp(2.5rem, 11vw, 4rem);
+  }
+
+  /* Reviewer row: stack on small screens */
+  .pd-review__footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-4);
+  }
+
+  /* Result items: reduce inner padding */
+  .pd-result-item {
+    padding: var(--space-3);
+  }
+
+  .pd-result-item__number {
+    font-size: clamp(2rem, 9vw, 3.5rem);
+  }
+}
+
+@media (max-width: 480px) {
+  /* Meta list: key-value items on tiny screens */
+  .pd-meta-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-1);
+  }
+}
+
+/* ============================================================
+   BLOGS PAGE
+   ============================================================ */
+@media (max-width: 480px) {
+  .blog-hero__heading {
+    font-size: clamp(2.5rem, 11vw, 4rem);
+  }
+
+  .blog-item__title {
+    font-size: clamp(1rem, 5vw, 1.5rem);
+  }
+}
+
+/* ============================================================
+   CONTACT PAGE
+   ============================================================ */
+@media (max-width: 600px) {
+  .contact-heading {
+    font-size: clamp(2.5rem, 11vw, 4rem);
+  }
+
+  /* Address items: icon + body stay in a row */
+  .contact-address-item {
+    padding: var(--space-3);
+    gap: var(--space-3);
+  }
+}
+
+/* ============================================================
+   LEGAL PAGES (T&C, Privacy Policy)
+   ============================================================ */
+@media (max-width: 480px) {
+  .utility-breadcrumb__title {
+    font-size: clamp(2rem, 11vw, 3.5rem);
+  }
+
+  .instructions-item__heading {
+    font-size: clamp(1.3rem, 7vw, 2rem);
+  }
+}
+
+/* ============================================================
+   404 PAGE
+   ============================================================ */
+@media (max-width: 480px) {
+  .error-code__digit {
+    font-size: clamp(5rem, 22vw, 8rem);
+  }
+
+  .error-title {
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+  }
+}
+
+/* ============================================================
+   SERVICES MARQUEE BUTTON
+   Already in services.css / home.css / about.css / legal.css
+   but repeated here for pages that only link services.css
+   ============================================================ */
+@media (max-width: 600px) {
+  .svc-marquee__btn {
+    padding: 0.75rem 2rem;
+    font-size: clamp(1rem, 4.5vw, 1.5rem);
+  }
+}
+
+/* ============================================================
+   FOOTER — phone layout
+   Already fixed in footer.css; these ensure newsletter form
+   doesn't overflow on very narrow viewports.
+   ============================================================ */
+@media (max-width: 360px) {
+  .footer-newsletter__form {
+    flex-direction: column;
+  }
+
+  .footer-newsletter__input {
+    border-right: 1px solid var(--color-border);
+    border-bottom: none;
+    border-radius: var(--radius-pill);
+  }
+
+  .footer-newsletter__btn {
+    border-radius: var(--radius-pill);
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Bottom strip: credits always wrap cleanly */
+@media (max-width: 480px) {
+  .footer-credits {
+    gap: var(--space-2);
+  }
+}

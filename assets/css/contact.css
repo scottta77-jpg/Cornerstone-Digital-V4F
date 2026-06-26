@@ -1,0 +1,180 @@
+/* ============================================================
+   CORNERSTONE DIGITAL — Contact page
+   ============================================================ */
+
+/* ============================================================
+   CONTACT SECTION
+   ============================================================ */
+.contact-section {
+  padding-block: var(--space-8);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.contact-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-7);
+}
+
+/* Header: label + H1 */
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--space-7);
+}
+
+.contact-heading {
+  font-family: var(--font-display);
+  font-size: clamp(3.5rem, 7vw, var(--text-6xl));
+  line-height: 0.92;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+/* Address items — three columns */
+.contact-address-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-1);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--space-7);
+}
+
+.contact-address-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  transition: border-color var(--transition-fast);
+}
+
+.contact-address-item:hover {
+  border-color: var(--color-accent);
+}
+
+.contact-address-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-address-icon img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+  opacity: 0.7;
+}
+
+.contact-address-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.contact-address-label {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 1.8vw, var(--text-xl));
+  text-transform: uppercase;
+  color: var(--color-white);
+  line-height: 1;
+}
+
+.contact-address-value {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: var(--leading-loose);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a.contact-address-value:hover {
+  color: var(--color-accent);
+}
+
+/* ============================================================
+   CONTACT FORM
+   ============================================================ */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+/* Two fields side by side */
+.contact-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+.contact-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.contact-form__label {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+}
+
+.contact-form__input {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-4);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-white);
+  width: 100%;
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+.contact-form__input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.contact-form__input:focus {
+  border-color: var(--color-accent);
+}
+
+.contact-form__textarea {
+  resize: vertical;
+  min-height: 160px;
+}
+
+.contact-form__submit {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: var(--space-2);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 900px) {
+  .contact-address-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-form__row {
+    grid-template-columns: 1fr;
+  }
+}

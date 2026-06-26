@@ -1,0 +1,20 @@
+{
+  "headers": [
+    {
+      "source": "**/*.avif",
+      "headers": [{ "key": "Content-Type", "value": "image/avif" }]
+    },
+    {
+      "source": "**/*.jpg",
+      "headers": [{ "key": "Content-Type", "value": "image/jpeg" }]
+    },
+    {
+      "source": "**/*.png",
+      "headers": [{ "key": "Content-Type", "value": "image/png" }]
+    },
+    {
+      "source": "**/*.svg",
+      "headers": [{ "key": "Content-Type", "value": "image/svg+xml" }]
+    }
+  ]
+}

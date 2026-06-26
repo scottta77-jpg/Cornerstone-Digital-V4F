@@ -1,0 +1,82 @@
+/* ============================================================
+   CORNERSTONE DIGITAL — Design Tokens
+   ============================================================ */
+:root {
+
+  /* --- Colour palette --- */
+  --color-bg:           #0d0d0d;
+  --color-bg-card:      #141414;
+  --color-bg-card-alt:  #1a1a1a;
+  --color-accent:       #d4e600;
+  --color-accent-dark:  #a8b500;
+  --color-white:        #ffffff;
+  --color-text:         #ffffff;
+  --color-text-muted:   #888888;
+  --color-text-dim:     #555555;
+  --color-border:       rgba(255, 255, 255, 0.07);
+  --color-border-accent:rgba(212, 230, 0, 0.35);
+
+  /* --- Typography --- */
+  --font-display: 'Bebas Neue', 'Impact', sans-serif;
+  --font-body:    'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+
+  --text-xs:   0.6875rem;   /* 11px */
+  --text-sm:   0.8125rem;   /* 13px */
+  --text-base: 0.9375rem;   /* 15px */
+  --text-md:   1.0625rem;   /* 17px */
+  --text-lg:   1.25rem;     /* 20px */
+  --text-xl:   1.5rem;      /* 24px */
+  --text-2xl:  2rem;        /* 32px */
+  --text-3xl:  2.5rem;      /* 40px */
+  --text-4xl:  3.5rem;      /* 56px */
+  --text-5xl:  5rem;        /* 80px */
+  --text-6xl:  7rem;        /* 112px */
+
+  --leading-tight:  1.05;
+  --leading-snug:   1.25;
+  --leading-normal: 1.6;
+  --leading-loose:  1.85;
+
+  --tracking-tight:  -0.02em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.06em;
+  --tracking-wider:   0.12em;
+
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-bold:    700;
+
+  /* --- Spacing scale (8px base) --- */
+  --space-1:   0.5rem;   /*  8px */
+  --space-2:   1rem;     /* 16px */
+  --space-3:   1.5rem;   /* 24px */
+  --space-4:   2rem;     /* 32px */
+  --space-5:   3rem;     /* 48px */
+  --space-6:   4rem;     /* 64px */
+  --space-7:   6rem;     /* 96px */
+  --space-8:   8rem;     /* 128px */
+
+  /* --- Layout --- */
+  --container-max:     1280px;
+  --container-padding: 1.5rem;
+  --section-py:        var(--space-7);
+
+  /* --- Borders & Radius --- */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   16px;
+  --radius-pill: 999px;
+
+  /* --- Transitions --- */
+  --transition-fast:   150ms ease;
+  --transition-base:   250ms ease;
+  --transition-slow:   400ms ease;
+
+  /* --- Z-index layers --- */
+  --z-below:    -1;
+  --z-base:      0;
+  --z-raised:   10;
+  --z-header:  100;
+  --z-overlay: 200;
+  --z-modal:   300;
+}

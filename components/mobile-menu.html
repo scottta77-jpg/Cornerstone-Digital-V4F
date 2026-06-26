@@ -1,0 +1,44 @@
+<!-- COMPONENT: MobileMenu -->
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Mobile navigation">
+  <div class="mobile-menu-overlay"></div>
+  <div class="mobile-menu-panel">
+    <button class="mobile-menu-close" aria-label="Close menu">Close ✕</button>
+
+    <nav aria-label="Mobile navigation">
+      <ul class="mobile-nav-list">
+        <li><a href="/" class="mobile-nav-link">Home</a></li>
+        <li><a href="/about" class="mobile-nav-link">About</a></li>
+        <li><a href="/services" class="mobile-nav-link">Services</a></li>
+        <li><a href="/projects" class="mobile-nav-link">Works</a></li>
+        <li><a href="/blogs" class="mobile-nav-link">Blog</a></li>
+        <li><a href="/contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<script>
+  (function () {
+    const toggle = document.querySelector('.mobile-menu-toggle');
+    const close  = document.querySelector('.mobile-menu-close');
+    const overlay = document.querySelector('.mobile-menu-overlay');
+    const menu   = document.getElementById('mobile-menu');
+
+    function openMenu() {
+      menu.setAttribute('aria-hidden', 'false');
+      toggle.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      menu.setAttribute('aria-hidden', 'true');
+      toggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    if (toggle) toggle.addEventListener('click', openMenu);
+    if (close)  close.addEventListener('click', closeMenu);
+    if (overlay) overlay.addEventListener('click', closeMenu);
+  })();
+</script>
+<!-- END COMPONENT: MobileMenu -->

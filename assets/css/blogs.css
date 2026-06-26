@@ -1,0 +1,191 @@
+/* ============================================================
+   CORNERSTONE DIGITAL — Blogs page
+   ============================================================ */
+
+/* ============================================================
+   BLOG HERO — full-bleed with text overlay
+   ============================================================ */
+.blog-hero {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.blog-hero__inner {
+  position: relative;
+  z-index: 2;
+  padding-block: var(--space-8);
+}
+
+.blog-hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 640px;
+}
+
+.blog-hero__heading {
+  font-family: var(--font-display);
+  font-size: clamp(3.5rem, 7vw, var(--text-6xl));
+  line-height: 0.92;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.blog-hero__sub {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  line-height: var(--leading-loose);
+  max-width: 440px;
+}
+
+/* Background image */
+.blog-hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.blog-hero__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.blog-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    var(--color-bg) 0%,
+    rgba(13, 13, 13, 0.6) 50%,
+    rgba(13, 13, 13, 0.3) 100%
+  );
+}
+
+/* ============================================================
+   BLOG ARCHIVE — 3-column grid of cards
+   ============================================================ */
+.blog-archive {
+  padding-block: var(--space-8);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5) var(--space-4);
+}
+
+/* Blog card */
+.blog-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  text-decoration: none;
+  color: inherit;
+}
+
+.blog-item__banner {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  background: var(--color-card);
+  aspect-ratio: 4/3;
+}
+
+.blog-item__banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transition-slow);
+}
+
+.blog-item:hover .blog-item__banner img {
+  transform: scale(1.04);
+}
+
+/* Hover overlay */
+.blog-item__hover {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.blog-item:hover .blog-item__hover {
+  opacity: 1;
+}
+
+.blog-item__btn {
+  background: var(--color-accent);
+  color: var(--color-bg);
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 1.8vw, var(--text-2xl));
+  text-transform: uppercase;
+  line-height: 1.1;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: var(--radius-pill);
+}
+
+/* Card body */
+.blog-item__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.blog-item__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2vw, var(--text-2xl));
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--color-white);
+  transition: color 0.2s;
+}
+
+.blog-item:hover .blog-item__title {
+  color: var(--color-accent);
+}
+
+.blog-item__desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: var(--leading-loose);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .blog-hero {
+    min-height: 60vh;
+  }
+
+  /* Keep 2-col on mobile to match reference */
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3) var(--space-2);
+  }
+}
+
+@media (max-width: 380px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
