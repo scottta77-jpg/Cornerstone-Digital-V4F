@@ -16,6 +16,7 @@ jobs:
           server: p142.lon.krystal.io
           username: github@cornerstonedg.com
           password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
           server-dir: /
           exclude: |
             **/.git*
