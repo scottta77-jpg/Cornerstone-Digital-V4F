@@ -1,27 +1,23 @@
-on: push
+name: Deploy to Krystal
+
+on:
+  push:
+    branches: [main]
 
 jobs:
-
   deploy:
-
     runs-on: ubuntu-latest
-
     steps:
-
       - uses: actions/checkout@v4
 
-      - uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-
-          server: ${{ secrets.FTP_SERVER }}
-
-          username: ${{ secrets.FTP_USERNAME }}
-
+          server: p142.lon.krystal.io
+          username: github@cornerstonedg.com
           password: ${{ secrets.FTP_PASSWORD }}
-
-          protocol: ftps
-
-          local-dir: ./dist/
-
-          server-dir: /public_html/
+          server-dir: /
+          exclude: |
+            **/.git*
+            **/.git*/**
+            .cpanel.yml
