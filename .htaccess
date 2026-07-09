@@ -2,6 +2,16 @@
 #  Cornerstone Digital — Performance Headers
 # ============================================================
 
+# --- Charset Encoding ---
+AddDefaultCharset UTF-8
+
+# --- Force Non-WWW ---
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^www\.cornerstonedg\.com [NC]
+  RewriteRule ^(.*)$ https://cornerstonedg.com/$1 [L,R=301]
+</IfModule>
+
 # --- Enable Gzip Compression ---
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html
