@@ -13,6 +13,9 @@
       rel="preconnect"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://d3e54v103j8qbb.cloudfront.net" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://widgets.leadconnectorhq.com" crossorigin="anonymous" />
     <title>Cornerstone Digital | Growth by Design</title>
     <meta
       content="Cornerstone Digital is a digital growth agency helping local businesses attract more customers and scale faster through smart design and automation."
@@ -27,7 +30,7 @@
       property="og:description"
     />
     <meta
-      content="https://cornerstonedg.com/assets/images/cornerstone-og-preview.png"
+      content="https://cornerstonedg.com/assets/images/cornerstone-og-preview.webp"
       property="og:image"
     />
     <meta
@@ -59,16 +62,21 @@
     <script
       src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
       type="text/javascript"
+      async
     ></script>
     <script type="text/javascript">
-      WebFont.load({
-        google: {
-          families: [
-            "DM Sans:300,400,500,600,700",
-            "Space Grotesk:300,400,500,600,700",
-          ],
-        },
-      });
+      function _loadFonts() {
+        WebFont.load({
+          google: {
+            families: [
+              "DM Sans:300,400,500,600,700",
+              "Space Grotesk:300,400,500,600,700",
+            ],
+          },
+        });
+      }
+      if (window.WebFont) { _loadFonts(); }
+      else { document.querySelector('script[src*="webfont"]').addEventListener('load', _loadFonts); }
     </script>
     <script type="text/javascript">
       !(function (o, c) {
@@ -234,6 +242,7 @@
     <link
       rel="stylesheet"
       href="https://unpkg.com/lenis@1.2.3/dist/lenis.css"
+      media="print" onload="this.media='all'"
     />
   
     
@@ -719,7 +728,8 @@
                 class="nav-logo-link w-nav-brand w--current"
                 ><img
                   loading="lazy"
-                  src="/assets/images/cornerstone-logo-3.png" style="width:165px;height:48px;object-fit:contain;object-position:left center"
+                  src="/assets/images/cornerstone-logo-3.webp" style="width:165px;height:48px;object-fit:contain;object-position:left center"
+                  width="330" height="96"
                   alt="Logo"
                   class="nav-logo" /></a
               ><a
@@ -836,8 +846,8 @@
     </header>
     
     <section class="csd-hero-section">
-      <video id="csd-hero-vid-1" class="csd-hero-bg" autoplay muted loop playsinline>
-        <source src="assets/images/background-video.mp4" type="video/mp4" />
+      <video id="csd-hero-vid-1" class="csd-hero-bg" autoplay muted loop playsinline preload="metadata" poster="assets/images/hero-poster.webp">
+        <source src="assets/images/hero-video-720.mp4" type="video/mp4" />
       </video>
       
       <script>
@@ -1103,10 +1113,11 @@
                           class="project-item-banner-wrap"
                         >
                           <img
-                            src="assets/images/projects/oilbase-project.png"
+                            src="assets/images/projects/oilbase-project.webp"
                             loading="lazy"
                             alt="Oilbase"
                             class="cover-size-image"
+                            width="1920" height="1080"
                           />
                           <div move-over-item="true" class="item-view-btn-wrap">
                             <div class="item-view-btn">View<br />Details</div>
@@ -1160,10 +1171,11 @@
                           class="project-item-banner-wrap"
                         >
                           <img
-                            src="assets/images/projects/herbert-crown-project.png"
+                            src="assets/images/projects/herbert-crown-project.webp"
                             loading="lazy"
                             alt="Herbert & Crown"
                             class="cover-size-image"
+                            width="1920" height="1080"
                           />
                           <div move-over-item="true" class="item-view-btn-wrap">
                             <div class="item-view-btn">View<br />Details</div>
@@ -1218,10 +1230,11 @@
                           class="project-item-banner-wrap"
                         >
                           <img
-                            src="assets/images/projects/herts-essex-pools-project.png"
+                            src="assets/images/projects/herts-essex-pools-project.webp"
                             loading="lazy"
                             alt="Herts & Essex Pools"
                             class="cover-size-image"
+                            width="1920" height="1080"
                           />
                           <div move-over-item="true" class="item-view-btn-wrap">
                             <div class="item-view-btn">View<br />Details</div>
@@ -1276,10 +1289,11 @@
                           class="project-item-banner-wrap"
                         >
                           <img
-                            src="assets/images/projects/crown-covenant-project.png"
+                            src="assets/images/projects/crown-covenant-project.webp"
                             loading="lazy"
                             alt="Crown & Covenant"
                             class="cover-size-image"
+                            width="1920" height="1080"
                           />
                           <div move-over-item="true" class="item-view-btn-wrap">
                             <div class="item-view-btn">View<br />Details</div>
@@ -1408,11 +1422,12 @@
               class="home-ratign-banner-wrap"
             >
               <img
-                src="images/impact image 2.png"
+                src="images/impact image 2.webp"
                 loading="lazy"
                 alt="Impact"
                 class="cover-size-image"
                 style="object-fit:cover;object-position:center center;"
+                width="1254" height="1254"
               />
             </div>
           </div>
@@ -1470,11 +1485,12 @@
               <div class="services-item-banner-with-list">
                 <div class="services-item-banner-wrap">
                   <img
-                    src="assets/images/services/design-build.png"
+                    src="assets/images/services/design-build.webp"
                     loading="lazy"
                     alt="Design & Build"
                     class="cover-size-image"
                     style="object-fit:cover;object-position:center center;"
+                    width="1448" height="1086"
                   />
                 </div>
                 <ul
@@ -1511,11 +1527,12 @@
               <div class="services-item-banner-with-list">
                 <div class="services-item-banner-wrap">
                   <img
-                    src="assets/images/services/technology.png"
+                    src="assets/images/services/technology.webp"
                     loading="lazy"
                     alt="Technology"
                     class="cover-size-image"
                     style="object-fit:cover;object-position:center center;"
+                    width="1254" height="1254"
                   />
                 </div>
                 <ul
@@ -1552,11 +1569,12 @@
               <div class="services-item-banner-with-list">
                 <div class="services-item-banner-wrap">
                   <img
-                    src="assets/images/services/growth.png"
+                    src="assets/images/services/growth.webp"
                     loading="lazy"
                     alt="Growth"
                     class="cover-size-image"
                     style="object-fit:cover;object-position:center center;"
+                    width="1122" height="1402"
                   />
                 </div>
                 <ul
@@ -1591,11 +1609,12 @@
               <div class="services-item-banner-with-list">
                 <div class="services-item-banner-wrap">
                   <img
-                    src="assets/images/services/strategy-consulting.png"
+                    src="assets/images/services/strategy-consulting.webp"
                     loading="lazy"
                     alt="Strategy & Consulting"
                     class="cover-size-image"
                     style="object-fit:cover;object-position:center center;"
+                    width="1448" height="1086"
                   />
                 </div>
                 <ul
@@ -1627,10 +1646,11 @@
       <div class="services-section-bg">
         <div class="services-bg-sticky">
           <img
-            src="assets/images/services/services-background.png"
+            src="assets/images/services/services-background.webp"
             loading="lazy"
             alt="Services Background"
             class="cover-size-image"
+            width="3356" height="1874"
           />
           <div class="accent-overlay-wrap">
             <div class="accent-overlay"></div>
@@ -2130,10 +2150,10 @@
           <!-- LEFT: 4-image carousel with pixel distortion -->
           <div class="csb-carousel" id="csb-carousel">
             <div class="csb-carousel-track">
-              <img src="/assets/images/carousel_1.png" alt="" class="csb-img csb-img-active" data-index="0">
-              <img src="/assets/images/carousel_2.png" alt="" class="csb-img" data-index="1">
-              <img src="/assets/images/carousel_3.png" alt="" class="csb-img" data-index="2">
-              <img src="/assets/images/carousel_4.png" alt="" class="csb-img" data-index="3">
+              <img src="/assets/images/carousel_1.webp" alt="" class="csb-img csb-img-active" data-index="0" width="1024" height="1536">
+              <img src="/assets/images/carousel_2.webp" alt="" class="csb-img" data-index="1" width="1024" height="1536">
+              <img src="/assets/images/carousel_3.webp" alt="" class="csb-img" data-index="2" width="1024" height="1536">
+              <img src="/assets/images/carousel_4.webp" alt="" class="csb-img" data-index="3" width="1024" height="1536">
             </div>
             <div class="csb-overlay">
               <div class="csb-headlines">
@@ -3227,7 +3247,7 @@
                 aria-current="page"
                 class="footer-logo-wrap w-inline-block w--current"
                 ><img
-                  src="/assets/images/cornerstone-logo-3.png" style="width:165px;height:48px;object-fit:contain;object-position:left center"
+                  src="/assets/images/cornerstone-logo-3.webp" style="width:165px;height:48px;object-fit:contain;object-position:left center"
                   loading="lazy"
                   alt="Logo"
                   class="footer-logo"
@@ -3351,52 +3371,64 @@
       type="text/javascript"
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
+      defer
     ></script>
     <script
       src="https://cdn.prod.website-files.com/69f5c8889d124099c0296270/js/webflow.schunk.d65d28b51e704711.js"
       type="text/javascript"
       integrity="sha384-2tUDb4wx8qb8tUODuPGtwnD5BTdEAvTlfdLQqhTJsfZczTnecabbYxictbYRYtBs"
       crossorigin="anonymous"
+      defer
     ></script>
     <script
       src="https://cdn.prod.website-files.com/69f5c8889d124099c0296270/js/webflow.01a9fcac.6904fed775b5ef41.js"
       type="text/javascript"
       integrity="sha384-vhE11GnPKU3fMoYpHjoO4a/GqCFhyaZO3Hui9BGPcCT2g7Nlio/kRTTAMAxxe0gn"
       crossorigin="anonymous"
+      defer
     ></script>
     <script
       src="https://cdn.prod.website-files.com/gsap/3.15.0/gsap.min.js"
       type="text/javascript"
+      defer
     ></script>
     <script
       src="https://cdn.prod.website-files.com/gsap/3.15.0/ScrollTrigger.min.js"
       type="text/javascript"
+      defer
     ></script>
     <script
       src="https://cdn.prod.website-files.com/gsap/3.15.0/SplitText.min.js"
       type="text/javascript"
+      defer
     ></script>
     <script
       src="https://cdn.prod.website-files.com/gsap/3.15.0/ScrollToPlugin.min.js"
       type="text/javascript"
+      defer
     ></script>
     <script type="text/javascript">
-      gsap.registerPlugin(ScrollTrigger, SplitText, ScrollToPlugin);
-    </script>
-    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
-    <script>
-      const lenis = new Lenis({
-        smooth: true,
-        lerp: 0.1,
-        wheelMultiplier: 1,
-        infinite: false,
+      document.addEventListener("DOMContentLoaded", function() {
+        if (window.gsap) gsap.registerPlugin(ScrollTrigger, SplitText, ScrollToPlugin);
       });
+    </script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        if (typeof Lenis === 'undefined') return;
+        const lenis = new Lenis({
+          smooth: true,
+          lerp: 0.1,
+          wheelMultiplier: 1,
+          infinite: false,
+        });
 
-      function raf(time) {
-        lenis.raf(time);
+        function raf(time) {
+          lenis.raf(time);
+          requestAnimationFrame(raf);
+        }
         requestAnimationFrame(raf);
-      }
-      requestAnimationFrame(raf);
+      });
     </script>
 
     <script>
@@ -4003,7 +4035,7 @@
       });
     </script>
 
-<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a455a732b631fd5b9ab7974"></script>
+<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a455a732b631fd5b9ab7974" defer></script>
 </body>
 
 </html>
