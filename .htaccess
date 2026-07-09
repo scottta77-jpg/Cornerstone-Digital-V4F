@@ -83,6 +83,12 @@ AddDefaultCharset UTF-8
     Header set Cache-Control "public, max-age=3600, must-revalidate"
   </FilesMatch>
 
+  # Sitemap & robots: always fresh
+  <FilesMatch "\.(xml|txt)$">
+    Header set Cache-Control "public, max-age=3600, must-revalidate"
+    Header set Content-Type "application/xml; charset=UTF-8"
+  </FilesMatch>
+
   # Security headers
   Header always set X-Content-Type-Options "nosniff"
   Header always set X-Frame-Options "SAMEORIGIN"
@@ -95,6 +101,8 @@ AddDefaultCharset UTF-8
   AddType image/avif .avif
   AddType video/mp4 .mp4
   AddType font/woff2 .woff2
+  AddType application/xml .xml
+  AddType text/plain .txt
 </IfModule>
 
 # --- ETags ---
