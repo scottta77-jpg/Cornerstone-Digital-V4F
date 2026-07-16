@@ -3644,61 +3644,63 @@
     </script>
 
     <script>
-      //------------------------------ Cube Code
-      gsap.registerPlugin(ScrollTrigger);
+      window.addEventListener("load", () => {
+        //------------------------------ Cube Code
+        gsap.registerPlugin(ScrollTrigger);
 
-      // Disable animation on screens 991px and below
-      const mm = gsap.matchMedia();
+        // Disable animation on screens 991px and below
+        const mm = gsap.matchMedia();
 
-      mm.add("(min-width: 0px)", () => {
-        const cubeSize = 380;
-        const half = cubeSize / 2;
+        mm.add("(min-width: 992px)", () => {
+          const cubeSize = 380;
+          const half = cubeSize / 2;
 
-        let transforms = [
-          `translateZ(${half}px)`, // Front
-          `rotateY(90deg) translateZ(${half}px)`, // Right
-          `rotateY(180deg) translateZ(${half}px)`, // Back
-          `rotateY(-90deg) translateZ(${half}px)`, // Left
-        ];
+          let transforms = [
+            `translateZ(${half}px)`, // Front
+            `rotateY(90deg) translateZ(${half}px)`, // Right
+            `rotateY(180deg) translateZ(${half}px)`, // Back
+            `rotateY(-90deg) translateZ(${half}px)`, // Left
+          ];
 
-        // Cube base
-        gsap.set(".cube", {
-          width: cubeSize,
-          height: cubeSize,
-          transformStyle: "preserve-3d",
-        });
-
-        // Apply transforms to faces
-        gsap.utils.toArray(".face").forEach((face, i) => {
-          gsap.set(face, {
-            position: "absolute",
+          // Cube base
+          gsap.set(".cube", {
             width: cubeSize,
             height: cubeSize,
-            backfaceVisibility: "hidden",
-            transform: transforms[i],
+            transformStyle: "preserve-3d",
           });
-        });
 
-        // Timeline with hold + rotate
-        let tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: ".cube-inner",
-            start: "top top",
-            end: "bottom bottom",
-            scrub: 1.5,
-            pin: ".cube-wrap",
-            anticipatePin: 1,
-          },
-        });
+          // Apply transforms to faces
+          gsap.utils.toArray(".face").forEach((face, i) => {
+            gsap.set(face, {
+              position: "absolute",
+              width: cubeSize,
+              height: cubeSize,
+              backfaceVisibility: "hidden",
+              transform: transforms[i],
+            });
+          });
 
-        // Timeline for cube rotation
-        tl.to(".cube", { rotationY: 0, duration: 1 })
-          .to(".cube", { rotationY: -90, duration: 0.5 })
-          .to(".cube", { rotationY: -90, duration: 1 })
-          .to(".cube", { rotationY: -180, duration: 0.5 })
-          .to(".cube", { rotationY: -180, duration: 1 })
-          .to(".cube", { rotationY: -270, duration: 0.5 })
-          .to(".cube", { rotationY: -270, duration: 1 });
+          // Timeline with hold + rotate
+          let tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: ".cube-inner",
+              start: "top top",
+              end: "bottom bottom",
+              scrub: 1.5,
+              pin: ".cube-wrap",
+              anticipatePin: 1,
+            },
+          });
+
+          // Timeline for cube rotation
+          tl.to(".cube", { rotationY: 0, duration: 1 })
+            .to(".cube", { rotationY: -90, duration: 0.5 })
+            .to(".cube", { rotationY: -90, duration: 1 })
+            .to(".cube", { rotationY: -180, duration: 0.5 })
+            .to(".cube", { rotationY: -180, duration: 1 })
+            .to(".cube", { rotationY: -270, duration: 0.5 })
+            .to(".cube", { rotationY: -270, duration: 1 });
+        });
       });
     </script>
 
