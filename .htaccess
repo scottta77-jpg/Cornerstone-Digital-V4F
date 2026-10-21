@@ -30,6 +30,9 @@ AddDefaultCharset UTF-8
   # Redirect /blog to /blogs
   RewriteRule ^blog/?$ /blogs [R=301,L]
 
+  # Redirect legacy /term-of-condition to /terms-and-conditions
+  RewriteRule ^term-of-condition/?$ /terms-and-conditions/ [R=301,L]
+
   # Legacy Template Blog Post 301 Redirects to Overhauled Articles
   RewriteRule ^blog/minimalist-branding-for-modern-tech-startups(\.html)?/?$ /blog/small-business-website-cost-uk/ [R=301,L]
   RewriteRule ^blog/maximizing-conversion-with-strategic-web-design(\.html)?/?$ /blog/ai-receptionist-vs-missed-call-text-back/ [R=301,L]

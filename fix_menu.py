@@ -57,7 +57,7 @@ files = [
   "./contact/index.html",
   "./404.html",
   "./404/index.html",
-  "./term-of-condition/index.html",
+  "./terms-and-conditions/index.html",
   "./privacy-policy/index.html"
 ]
 
