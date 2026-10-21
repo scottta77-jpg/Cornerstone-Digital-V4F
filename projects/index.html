@@ -288,13 +288,35 @@
       .text-regular.faq-para,
       .faq-section-details > div,
       .testimonial-section-details > div,
-      .blog-content-wrap {
+      .blog-content-wrap,
+      .footer-bottom,
+      .footer-details,
+      .footer-extra-link,
+      .footer-form-with-content,
+      .footer-menu-inner,
+      .footer-section,
+      .footer-left-content,
+      .footer-top,
+      .footer-details-with-form,
+      .footer-menus,
+      .h6 {
         opacity: 1 !important;
         visibility: visible !important;
       }
       .faq-section-details > div,
-      .testimonial-section-details > div {
+      .testimonial-section-details > div,
+      .footer-details,
+      .footer-form-with-content,
+      .footer-extra-link,
+      .footer-bottom {
         transform: none !important;
+      }
+      .gsap_split_line-mask {
+        overflow: visible !important;
+      }
+      .gsap_split_line {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
       }
       .testimonial-item:not(.empty-box) {
         display: flex !important;
@@ -363,7 +385,7 @@
                 href="/projects"
                 aria-current="page"
                 class="nav-link w-nav-link w--current"
-                >Works</a><a href="/services" class="nav-link w-nav-link">Services</a><a href="/blogs" class="nav-link w-nav-link">Blogs</a><a href="/contact" class="nav-link w-nav-link">Contact</a><a href="/#booking" class="nav-link w-nav-link">Book a Call</a>
+                >Works</a><a href="/blogs" class="nav-link w-nav-link">Blogs</a><a href="/contact" class="nav-link w-nav-link">Contact</a><a href="/#booking" class="nav-link w-nav-link">Book a Call</a>
               <div class="menu-btn">
                 <img
                   src="https://cdn.prod.website-files.com/69f5c8889d124099c0296270/6a0c548ad2b8d1a59d8e843f_menu.svg"
@@ -409,11 +431,6 @@
                             aria-current="page"
                             class="nav-dropdown-item w-inline-block w--current"
                             ><div>Works</div></a
-                          ><a
-                            href="/services"
-                            class="nav-dropdown-item w-inline-block"
-                            ><div>Services</div>
-                            <div class="nave-dropdown-link-bg"></div></a
                           ><a
                             href="/blogs"
                             class="nav-dropdown-item w-inline-block"
@@ -2256,7 +2273,7 @@
       <div class="footer-left-content">
         <div class="footer-top">
           <div class="footer-details-with-form">
-            <div fade-up="true" class="footer-details">
+            <div class="footer-details">
               <a href="/" class="footer-logo-wrap w-inline-block"
                 ><img
                   src="/assets/images/cornerstone-logo-3.webp" style="width:165px;height:48px;object-fit:contain;object-position:left center"
@@ -2264,12 +2281,12 @@
                   alt="Logo"
                   class="footer-logo"
               /></a>
-              <p text-anim="true" class="h6">
+              <p class="h6">
                 Cornerstone Digital is a digital growth agency helping local businesses attract more customers and scale faster through smart design and automation.
               </p>
               
             </div>
-            <div fade-up="true" class="footer-form-with-content">
+            <div class="footer-form-with-content">
               <div class="footer-form-title-with-para">
                 <h5 class="h5">Never Miss an Update</h5>
                 <p class="text-regular">
@@ -2347,13 +2364,13 @@
             id="w-node-c15da65f-0721-dc4f-25b9-c433ea4820a9-0bb3f17a"
             class="footer-menus"
           >
-            <div fade-up="true" class="footer-extra-link" style="display: flex; flex-direction: column; gap: 16px;">
+            <div class="footer-extra-link" style="display: flex; flex-direction: column; gap: 16px;">
               <h6 class="text-white" style="font-size: 1.25rem; font-weight: 600; margin-bottom: 8px; color: white;">Contact Us</h6>
               <a href="tel:07482765599" class="footer-link-style-two">07482 765599</a>
               <span class="footer-link-style-two">1 Paul road, Essex , SO1 8EL, London</span>
             </div>
             
-            <div fade-up="true" class="footer-extra-link" style="display: flex; flex-direction: column; gap: 16px;">
+            <div class="footer-extra-link" style="display: flex; flex-direction: column; gap: 16px;">
               <a href="/term-of-condition" class="footer-link-style-two"
                 >Terms &amp; Conditions</a
               ><a href="/privacy-policy" class="footer-link-style-two"
@@ -2372,7 +2389,7 @@
           </p>
         </div>
 
-        <div fade="true" class="footer-bottom">
+        <div class="footer-bottom">
           <p class="footer-link-style-three">
             Built by
             <a
