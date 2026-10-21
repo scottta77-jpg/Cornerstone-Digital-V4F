@@ -165,6 +165,255 @@ https://cornerstonedg.com/assets/images/blog/01-website-enquiries.webp
         opacity: 0 !important;
         visibility: hidden !important;
       }
+
+      /* Cornerstone Digital Blog Pagination */
+      .cornerstone-pagination-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 56px;
+        margin-bottom: 24px;
+        padding: 0 16px;
+        flex-wrap: wrap;
+        width: 100%;
+        position: relative;
+        z-index: 5;
+      }
+      .cornerstone-pagination-numbers {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .cornerstone-page-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        padding: 0;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 6px;
+        color: #ffffff;
+        font-family: 'Space Grotesk', 'DM Sans', sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+        user-select: none;
+        outline: none;
+      }
+      .cornerstone-page-number:hover:not(.is-active) {
+        background: rgba(240, 226, 38, 0.08);
+        border-color: #F0E226;
+        color: #F0E226;
+        transform: translateY(-2px);
+      }
+      .cornerstone-page-number.is-active {
+        background: #F0E226;
+        border-color: #F0E226;
+        color: #111112;
+        font-weight: 700;
+        box-shadow: 0 4px 18px rgba(240, 226, 38, 0.28);
+        cursor: default;
+        pointer-events: none;
+      }
+      .cornerstone-page-number:focus-visible,
+      .cornerstone-pagination-btn:focus-visible {
+        outline: 2px solid #F0E226;
+        outline-offset: 3px;
+      }
+      .cornerstone-pagination-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        height: 48px;
+        padding: 0 22px;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 6px;
+        color: #ffffff;
+        font-family: 'Space Grotesk', 'DM Sans', sans-serif;
+        font-size: 0.875rem;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+        user-select: none;
+        outline: none;
+      }
+      .cornerstone-pagination-btn svg {
+        transition: transform 0.25s ease;
+      }
+      .cornerstone-pagination-btn:hover:not(:disabled):not(.is-disabled) {
+        background: #F0E226;
+        border-color: #F0E226;
+        color: #111112;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 18px rgba(240, 226, 38, 0.28);
+      }
+      .cornerstone-pagination-btn.prev-btn:hover:not(:disabled):not(.is-disabled) svg {
+        transform: translateX(-3px);
+      }
+      .cornerstone-pagination-btn.next-btn:hover:not(:disabled):not(.is-disabled) svg {
+        transform: translateX(3px);
+      }
+      .cornerstone-pagination-btn:disabled,
+      .cornerstone-pagination-btn.is-disabled {
+        opacity: 0.28;
+        cursor: not-allowed;
+        pointer-events: none;
+        border-color: rgba(255, 255, 255, 0.06);
+        background: transparent;
+        transform: none;
+      }
+      .cornerstone-pagination-info {
+        width: 100%;
+        text-align: center;
+        margin-top: 12px;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 0.875rem;
+        color: rgba(255, 255, 255, 0.45);
+        letter-spacing: 0.02em;
+      }
+      @media (max-width: 600px) {
+        .cornerstone-pagination-wrap {
+          gap: 8px;
+          margin-top: 40px;
+        }
+        .cornerstone-page-number {
+          width: 42px;
+          height: 42px;
+          font-size: 0.9rem;
+        }
+        .cornerstone-pagination-btn {
+          height: 42px;
+          padding: 0 14px;
+          font-size: 0.8rem;
+        }
+        .cornerstone-pagination-btn span {
+          display: none;
+        }
+      }
+    
+
+      /* ============================================================
+         SEAMLESS SERVICES MARQUEE ANIMATION
+         ============================================================ */
+      .services-marquee-section {
+        position: relative;
+        overflow: hidden;
+      }
+      .services-marquee {
+        display: flex !important;
+        overflow: hidden !important;
+        user-select: none !important;
+        pointer-events: auto !important;
+        width: 100% !important;
+      }
+      .services-marquee-truck {
+        flex-shrink: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        will-change: transform !important;
+      }
+      .services-marquee-truck[marquee-slide-left="true"] {
+        animation: csd-marquee-slide-left 28s linear infinite !important;
+      }
+      .services-marquee-truck[marquee-slide-right="true"] {
+        animation: csd-marquee-slide-right 28s linear infinite !important;
+      }
+      @keyframes csd-marquee-slide-left {
+        0% {
+          transform: translate3d(0, 0, 0);
+        }
+        100% {
+          transform: translate3d(calc(-100% - var(--_common-spacing---space-20x, 48px)), 0, 0);
+        }
+      }
+      @keyframes csd-marquee-slide-right {
+        0% {
+          transform: translate3d(calc(-100% - var(--_common-spacing---space-20x, 48px)), 0, 0);
+        }
+        100% {
+          transform: translate3d(0, 0, 0);
+        }
+      }
+      .services-marquee-link {
+        position: relative !important;
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        text-decoration: none !important;
+      }
+      .services-marquee-btn-wrap {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        pointer-events: none !important;
+        z-index: 20 !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        transform: none !important;
+      }
+      .services-marquee-btn {
+        width: 120px !important;
+        height: 120px !important;
+        padding: 16px !important;
+        aspect-ratio: 1 !important;
+        border: 1.5px dashed #F0E226 !important;
+        border-radius: 50% !important;
+        background-color: rgba(17, 17, 18, 0.75) !important;
+        -webkit-backdrop-filter: blur(12px) !important;
+        backdrop-filter: blur(12px) !important;
+        font-family: 'Space Grotesk', sans-serif !important;
+        color: #ffffff !important;
+        font-size: 0.875rem !important;
+        font-weight: 600 !important;
+        text-align: center !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.05em !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5) !important;
+        transition: border-color 0.3s ease, color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease !important;
+        pointer-events: auto !important;
+        will-change: transform !important;
+      }
+      .services-marquee-link:hover .services-marquee-btn {
+        border-color: #F7C324 !important;
+        color: #F0E226 !important;
+        background-color: rgba(17, 17, 18, 0.92) !important;
+        box-shadow: 0 0 24px rgba(240, 226, 38, 0.3), 0 8px 32px rgba(0, 0, 0, 0.6) !important;
+      }
+      @media (max-width: 991px) {
+        .services-marquee-btn {
+          width: 100px !important;
+          height: 100px !important;
+          font-size: 0.8rem !important;
+        }
+      }
+      @media (max-width: 479px) {
+        .services-marquee-btn {
+          width: 88px !important;
+          height: 88px !important;
+          font-size: 0.75rem !important;
+        }
+      }
+
 </style>
 <link rel="canonical" href="https://cornerstonedg.com/blogs/"/>
 </head>
@@ -460,153 +709,118 @@ https://cornerstonedg.com/assets/images/blog/01-website-enquiries.webp
 </a>
 </div>
 </div>
+<nav class="cornerstone-pagination-wrap" aria-label="Blog pagination" role="navigation">
+  <button class="cornerstone-pagination-btn prev-btn is-disabled" id="blog-prev-btn" aria-label="Previous page" disabled>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <line x1="19" y1="12" x2="5" y2="12"></line>
+      <polyline points="12 19 5 12 12 5"></polyline>
+    </svg>
+    <span>Previous</span>
+  </button>
+  <div class="cornerstone-pagination-numbers" id="blog-pagination-numbers">
+    <button class="cornerstone-page-number is-active" data-page="1" aria-current="page" aria-label="Page 1">1</button>
+  </div>
+  <button class="cornerstone-pagination-btn next-btn is-disabled" id="blog-next-btn" aria-label="Next page" disabled>
+    <span>Next</span>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <line x1="5" y1="12" x2="19" y2="12"></line>
+      <polyline points="12 5 19 12 12 19"></polyline>
+    </svg>
+  </button>
+  <div class="cornerstone-pagination-info" id="blog-pagination-info">Showing all 8 articles</div>
+</nav>
 </div>
 </div>
 </div>
 </section>
 <section class="services-marquee-section">
-<a class="services-marquee-link w-inline-block" href="/services" move-over-parent="true"> <div class="services-marquee">
+<a class="services-marquee-link w-inline-block" href="/#booking"><div class="services-marquee">
 <div class="services-marquee-truck" marquee-slide-left="true">
-<div class="services-marquee-dot">
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Automation</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Strategy &amp; Consulting</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Websites</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">AI Tools</h2>
 </div>
-<h2 class="display-three">
-            Branding
-          </h2>
-<div class="services-marquee-dot">
+<div class="services-marquee-truck" marquee-slide-left="true" aria-hidden="true">
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Automation</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Strategy &amp; Consulting</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Websites</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">AI Tools</h2>
 </div>
-<h2 class="display-three">
-            UI/UX
-          </h2>
-<div class="services-marquee-dot">
+<div class="services-marquee-truck" marquee-slide-left="true" aria-hidden="true">
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Automation</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Strategy &amp; Consulting</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Websites</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">AI Tools</h2>
 </div>
-<h2 class="display-three">
-            Development
-          </h2>
-<div class="services-marquee-dot">
-</div>
-<h2 class="display-three">
-            Marketing
-          </h2>
-</div>
-<div class="services-marquee-truck" marquee-slide-left="true">
-<div class="services-marquee-dot">
-</div>
-<h2 class="display-three">
-            Branding
-          </h2>
-<div class="services-marquee-dot">
-</div>
-<h2 class="display-three">
-            UI/UX
-          </h2>
-<div class="services-marquee-dot">
-</div>
-<h2 class="display-three">
-            Development
-          </h2>
-<div class="services-marquee-dot">
-</div>
-<h2 class="display-three">
-            Marketing
-          </h2>
-</div>
-<div class="services-marquee-truck" marquee-slide-left="true">
-<div class="services-marquee-dot">
-</div>
-<h2 class="display-three">
-            Branding
-          </h2>
-<div class="services-marquee-dot">
-</div>
-<h2 class="display-three">
-            UI/UX
-          </h2>
-<div class="services-marquee-dot">
-</div>
-<h2 class="display-three">
-            Development
-          </h2>
-<div class="services-marquee-dot">
-</div>
-<h2 class="display-three">
-            Marketing
-          </h2>
+<div class="services-marquee-truck" marquee-slide-left="true" aria-hidden="true">
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Automation</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Strategy &amp; Consulting</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Websites</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">AI Tools</h2>
 </div>
 </div>
 <div class="services-marquee">
 <div class="services-marquee-truck" marquee-slide-right="true">
-<div class="services-marquee-dot">
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Automation</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Strategy &amp; Consulting</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Websites</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">AI Tools</h2>
 </div>
-<h2 class="display-three">
-            Branding
-          </h2>
-<div class="services-marquee-dot">
+<div class="services-marquee-truck" marquee-slide-right="true" aria-hidden="true">
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Automation</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Strategy &amp; Consulting</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Websites</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">AI Tools</h2>
 </div>
-<h2 class="display-three">
-            UI/UX
-          </h2>
-<div class="services-marquee-dot">
+<div class="services-marquee-truck" marquee-slide-right="true" aria-hidden="true">
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Automation</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Strategy &amp; Consulting</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Websites</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">AI Tools</h2>
 </div>
-<h2 class="display-three">
-            Development
-          </h2>
-<div class="services-marquee-dot">
-</div>
-<h2 class="display-three">
-            Marketing
-          </h2>
-</div>
-<div class="services-marquee-truck" marquee-slide-right="true">
-<div class="services-marquee-dot">
-</div>
-<h2 class="display-three">
-            Branding
-          </h2>
-<div class="services-marquee-dot">
-</div>
-<h2 class="display-three">
-            UI/UX
-          </h2>
-<div class="services-marquee-dot">
-</div>
-<h2 class="display-three">
-            Development
-          </h2>
-<div class="services-marquee-dot">
-</div>
-<h2 class="display-three">
-            Marketing
-          </h2>
-</div>
-<div class="services-marquee-truck" marquee-slide-right="true">
-<div class="services-marquee-dot">
-</div>
-<h2 class="display-three">
-            Branding
-          </h2>
-<div class="services-marquee-dot">
-</div>
-<h2 class="display-three">
-            UI/UX
-          </h2>
-<div class="services-marquee-dot">
-</div>
-<h2 class="display-three">
-            Development
-          </h2>
-<div class="services-marquee-dot">
-</div>
-<h2 class="display-three">
-            Marketing
-          </h2>
+<div class="services-marquee-truck" marquee-slide-right="true" aria-hidden="true">
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Automation</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Strategy &amp; Consulting</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Websites</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">AI Tools</h2>
 </div>
 </div>
-<div class="services-marquee-btn-wrap" move-over-item="true">
-<div class="services-marquee-btn">
-          Start a Project
-        </div>
-</div>
-</a>
+<div class="services-marquee-btn-wrap">
+<div class="services-marquee-btn">Book a Call</div>
+</div></a>
 </section>
 <footer class="footer-section">
 <div class="footer-left-content">
@@ -1214,6 +1428,179 @@ window.Webflow.push(() =&gt; {
       }
     }
   });
+</script>
+<script id="cornerstone-pagination-script">
+(function() {
+  function initPagination() {
+    var POSTS_PER_PAGE = 8;
+    var listContainer = document.querySelector(".blog-collection-list");
+    if (!listContainer) return;
+
+    var items = Array.from(listContainer.querySelectorAll(".w-dyn-item"));
+    var totalItems = items.length;
+    if (totalItems === 0) return;
+
+    var totalPages = Math.ceil(totalItems / POSTS_PER_PAGE);
+    var prevBtn = document.getElementById("blog-prev-btn");
+    var nextBtn = document.getElementById("blog-next-btn");
+    var numbersContainer = document.getElementById("blog-pagination-numbers");
+    var infoEl = document.getElementById("blog-pagination-info");
+
+    var urlParams = new URLSearchParams(window.location.search);
+    var currentPage = parseInt(urlParams.get("page"), 10) || 1;
+    if (currentPage < 1) currentPage = 1;
+    if (currentPage > totalPages) currentPage = totalPages;
+
+    function renderPagination() {
+      var startIndex = (currentPage - 1) * POSTS_PER_PAGE;
+      var endIndex = Math.min(startIndex + POSTS_PER_PAGE, totalItems);
+
+      items.forEach(function(item, index) {
+        if (index >= startIndex && index < endIndex) {
+          item.style.display = "";
+          item.style.opacity = "1";
+          item.style.visibility = "visible";
+          item.style.transform = "none";
+        } else {
+          item.style.display = "none";
+        }
+      });
+
+      if (numbersContainer) {
+        numbersContainer.innerHTML = "";
+        for (var i = 1; i <= totalPages; i++) {
+          (function(pageIdx) {
+            var btn = document.createElement("button");
+            btn.type = "button";
+            btn.className = "cornerstone-page-number" + (pageIdx === currentPage ? " is-active" : "");
+            btn.setAttribute("data-page", pageIdx);
+            btn.setAttribute("aria-label", "Page " + pageIdx);
+            if (pageIdx === currentPage) {
+              btn.setAttribute("aria-current", "page");
+            }
+            btn.textContent = pageIdx;
+            btn.addEventListener("click", function() {
+              goToPage(pageIdx);
+            });
+            numbersContainer.appendChild(btn);
+          })(i);
+        }
+      }
+
+      if (prevBtn) {
+        prevBtn.disabled = currentPage <= 1;
+        if (currentPage <= 1) {
+          prevBtn.classList.add("is-disabled");
+        } else {
+          prevBtn.classList.remove("is-disabled");
+        }
+      }
+
+      if (nextBtn) {
+        nextBtn.disabled = currentPage >= totalPages;
+        if (currentPage >= totalPages) {
+          nextBtn.classList.add("is-disabled");
+        } else {
+          nextBtn.classList.remove("is-disabled");
+        }
+      }
+
+      if (infoEl) {
+        if (totalItems <= POSTS_PER_PAGE) {
+          infoEl.textContent = "Showing all " + totalItems + " articles";
+        } else {
+          infoEl.textContent = "Showing " + (startIndex + 1) + "–" + endIndex + " of " + totalItems + " articles";
+        }
+      }
+    }
+
+    function goToPage(page) {
+      if (page < 1 || page > totalPages || page === currentPage) return;
+      currentPage = page;
+
+      var url = new URL(window.location);
+      if (currentPage === 1) {
+        url.searchParams.delete("page");
+      } else {
+        url.searchParams.set("page", currentPage);
+      }
+      window.history.pushState({ page: currentPage }, "", url);
+
+      renderPagination();
+
+      var section = document.querySelector(".blog-arcive-section");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+
+    if (prevBtn) {
+      prevBtn.onclick = function() {
+        goToPage(currentPage - 1);
+      };
+    }
+
+    if (nextBtn) {
+      nextBtn.onclick = function() {
+        goToPage(currentPage + 1);
+      };
+    }
+
+    window.addEventListener("popstate", function(e) {
+      var page = (e.state && e.state.page) || parseInt(new URLSearchParams(window.location.search).get("page"), 10) || 1;
+      currentPage = page;
+      renderPagination();
+    });
+
+    renderPagination();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initPagination);
+  } else {
+    initPagination();
+  }
+})();
+</script>
+<script id="cornerstone-marquee-hover-script">
+(function() {
+  function initMarqueeHover() {
+    document.querySelectorAll('.services-marquee-link').forEach(function(card) {
+      var btn = card.querySelector('.services-marquee-btn');
+      if (!btn) return;
+      if (!window.gsap) return;
+
+      gsap.set(btn, { x: 0, y: 0, scale: 1, opacity: 1, transformStyle: "flat" });
+
+      var xTo = gsap.quickTo(btn, "x", { duration: 0.35, ease: "power3.out" });
+      var yTo = gsap.quickTo(btn, "y", { duration: 0.35, ease: "power3.out" });
+
+      card.addEventListener("mouseenter", function() {
+        gsap.to(btn, { scale: 1.08, duration: 0.3, ease: "power2.out" });
+      });
+
+      card.addEventListener("mousemove", function(e) {
+        var rect = card.getBoundingClientRect();
+        var x = e.clientX - rect.left - rect.width / 2;
+        var y = e.clientY - rect.top - rect.height / 2;
+        xTo(x * 0.22);
+        yTo(y * 0.22);
+      });
+
+      card.addEventListener("mouseleave", function() {
+        xTo(0);
+        yTo(0);
+        gsap.to(btn, { scale: 1, duration: 0.4, ease: "power2.out" });
+      });
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initMarqueeHover);
+  } else {
+    initMarqueeHover();
+  }
+})();
 </script>
 </body>
 </html>

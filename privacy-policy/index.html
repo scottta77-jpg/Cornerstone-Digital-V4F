@@ -134,7 +134,122 @@
       .section-label-wrap {
         display: block !important;
       }
-    </style>
+    
+      /* ============================================================
+         SEAMLESS SERVICES MARQUEE ANIMATION
+         ============================================================ */
+      .services-marquee-section {
+        position: relative;
+        overflow: hidden;
+      }
+      .services-marquee {
+        display: flex !important;
+        overflow: hidden !important;
+        user-select: none !important;
+        pointer-events: auto !important;
+        width: 100% !important;
+      }
+      .services-marquee-truck {
+        flex-shrink: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        will-change: transform !important;
+      }
+      .services-marquee-truck[marquee-slide-left="true"] {
+        animation: csd-marquee-slide-left 28s linear infinite !important;
+      }
+      .services-marquee-truck[marquee-slide-right="true"] {
+        animation: csd-marquee-slide-right 28s linear infinite !important;
+      }
+      @keyframes csd-marquee-slide-left {
+        0% {
+          transform: translate3d(0, 0, 0);
+        }
+        100% {
+          transform: translate3d(calc(-100% - var(--_common-spacing---space-20x, 48px)), 0, 0);
+        }
+      }
+      @keyframes csd-marquee-slide-right {
+        0% {
+          transform: translate3d(calc(-100% - var(--_common-spacing---space-20x, 48px)), 0, 0);
+        }
+        100% {
+          transform: translate3d(0, 0, 0);
+        }
+      }
+      .services-marquee-link {
+        position: relative !important;
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        text-decoration: none !important;
+      }
+      .services-marquee-btn-wrap {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        pointer-events: none !important;
+        z-index: 20 !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        transform: none !important;
+      }
+      .services-marquee-btn {
+        width: 120px !important;
+        height: 120px !important;
+        padding: 16px !important;
+        aspect-ratio: 1 !important;
+        border: 1.5px dashed #F0E226 !important;
+        border-radius: 50% !important;
+        background-color: rgba(17, 17, 18, 0.75) !important;
+        -webkit-backdrop-filter: blur(12px) !important;
+        backdrop-filter: blur(12px) !important;
+        font-family: 'Space Grotesk', sans-serif !important;
+        color: #ffffff !important;
+        font-size: 0.875rem !important;
+        font-weight: 600 !important;
+        text-align: center !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.05em !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5) !important;
+        transition: border-color 0.3s ease, color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease !important;
+        pointer-events: auto !important;
+        will-change: transform !important;
+      }
+      .services-marquee-link:hover .services-marquee-btn {
+        border-color: #F7C324 !important;
+        color: #F0E226 !important;
+        background-color: rgba(17, 17, 18, 0.92) !important;
+        box-shadow: 0 0 24px rgba(240, 226, 38, 0.3), 0 8px 32px rgba(0, 0, 0, 0.6) !important;
+      }
+      @media (max-width: 991px) {
+        .services-marquee-btn {
+          width: 100px !important;
+          height: 100px !important;
+          font-size: 0.8rem !important;
+        }
+      }
+      @media (max-width: 479px) {
+        .services-marquee-btn {
+          width: 88px !important;
+          height: 88px !important;
+          font-size: 0.75rem !important;
+        }
+      }
+
+</style>
 <style>
       
       .w-webflow-badge {
@@ -309,7 +424,7 @@
 </div>
 </section>
 <section class="services-marquee-section">
-<a class="services-marquee-link w-inline-block" href="/services" move-over-parent="true"><div class="services-marquee">
+<a class="services-marquee-link w-inline-block" href="/#booking"><div class="services-marquee">
 <div class="services-marquee-truck" marquee-slide-left="true">
 <div class="services-marquee-dot"></div>
 <h2 class="display-three">Automation</h2>
@@ -320,7 +435,7 @@
 <div class="services-marquee-dot"></div>
 <h2 class="display-three">AI Tools</h2>
 </div>
-<div class="services-marquee-truck" marquee-slide-left="true">
+<div class="services-marquee-truck" marquee-slide-left="true" aria-hidden="true">
 <div class="services-marquee-dot"></div>
 <h2 class="display-three">Automation</h2>
 <div class="services-marquee-dot"></div>
@@ -330,7 +445,17 @@
 <div class="services-marquee-dot"></div>
 <h2 class="display-three">AI Tools</h2>
 </div>
-<div class="services-marquee-truck" marquee-slide-left="true">
+<div class="services-marquee-truck" marquee-slide-left="true" aria-hidden="true">
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Automation</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Strategy &amp; Consulting</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Websites</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">AI Tools</h2>
+</div>
+<div class="services-marquee-truck" marquee-slide-left="true" aria-hidden="true">
 <div class="services-marquee-dot"></div>
 <h2 class="display-three">Automation</h2>
 <div class="services-marquee-dot"></div>
@@ -352,7 +477,7 @@
 <div class="services-marquee-dot"></div>
 <h2 class="display-three">AI Tools</h2>
 </div>
-<div class="services-marquee-truck" marquee-slide-right="true">
+<div class="services-marquee-truck" marquee-slide-right="true" aria-hidden="true">
 <div class="services-marquee-dot"></div>
 <h2 class="display-three">Automation</h2>
 <div class="services-marquee-dot"></div>
@@ -362,7 +487,17 @@
 <div class="services-marquee-dot"></div>
 <h2 class="display-three">AI Tools</h2>
 </div>
-<div class="services-marquee-truck" marquee-slide-right="true">
+<div class="services-marquee-truck" marquee-slide-right="true" aria-hidden="true">
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Automation</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Strategy &amp; Consulting</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">Websites</h2>
+<div class="services-marquee-dot"></div>
+<h2 class="display-three">AI Tools</h2>
+</div>
+<div class="services-marquee-truck" marquee-slide-right="true" aria-hidden="true">
 <div class="services-marquee-dot"></div>
 <h2 class="display-three">Automation</h2>
 <div class="services-marquee-dot"></div>
@@ -373,7 +508,7 @@
 <h2 class="display-three">AI Tools</h2>
 </div>
 </div>
-<div class="services-marquee-btn-wrap" move-over-item="true">
+<div class="services-marquee-btn-wrap">
 <div class="services-marquee-btn">Book a Call</div>
 </div></a>
 </section>
@@ -1028,32 +1163,48 @@
           );
         });
 
-        /* ---- Marquee slide animations ---- */
-        gsap.utils.toArray('[marquee-slide-left="true"]').forEach((el) => {
-          gsap.fromTo(el,
-            { xPercent: 0 },
-            {
-              xPercent: -100,
-              duration: 30,
-              ease: "none",
-              repeat: -1
-            }
-          );
-        });
-
-        gsap.utils.toArray('[marquee-slide-right="true"]').forEach((el) => {
-          gsap.fromTo(el,
-            { xPercent: -100 },
-            {
-              xPercent: 0,
-              duration: 30,
-              ease: "none",
-              repeat: -1
-            }
-          );
-        });
-      });
+        /* ---- Marquee animations handled via GPU CSS ---- */
     </script>
 <script data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a455a732b631fd5b9ab7974" src="https://widgets.leadconnectorhq.com/loader.js"></script>
+<script id="cornerstone-marquee-hover-script">
+(function() {
+  function initMarqueeHover() {
+    document.querySelectorAll('.services-marquee-link').forEach(function(card) {
+      var btn = card.querySelector('.services-marquee-btn');
+      if (!btn) return;
+      if (!window.gsap) return;
+
+      gsap.set(btn, { x: 0, y: 0, scale: 1, opacity: 1, transformStyle: "flat" });
+
+      var xTo = gsap.quickTo(btn, "x", { duration: 0.35, ease: "power3.out" });
+      var yTo = gsap.quickTo(btn, "y", { duration: 0.35, ease: "power3.out" });
+
+      card.addEventListener("mouseenter", function() {
+        gsap.to(btn, { scale: 1.08, duration: 0.3, ease: "power2.out" });
+      });
+
+      card.addEventListener("mousemove", function(e) {
+        var rect = card.getBoundingClientRect();
+        var x = e.clientX - rect.left - rect.width / 2;
+        var y = e.clientY - rect.top - rect.height / 2;
+        xTo(x * 0.22);
+        yTo(y * 0.22);
+      });
+
+      card.addEventListener("mouseleave", function() {
+        xTo(0);
+        yTo(0);
+        gsap.to(btn, { scale: 1, duration: 0.4, ease: "power2.out" });
+      });
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initMarqueeHover);
+  } else {
+    initMarqueeHover();
+  }
+})();
+</script>
 </body>
 </html>
