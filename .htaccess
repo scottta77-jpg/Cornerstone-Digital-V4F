@@ -8,11 +8,25 @@ ErrorDocument 404 /404.html
 # --- Charset Encoding ---
 AddDefaultCharset UTF-8
 
-# --- Force Non-WWW ---
+# --- URL Rewriting & Clean URLs ---
 <IfModule mod_rewrite.c>
   RewriteEngine On
+
+  # Force Non-WWW
   RewriteCond %{HTTP_HOST} ^www\.cornerstonedg\.com [NC]
   RewriteRule ^(.*)$ https://cornerstonedg.com/$1 [L,R=301]
+
+  # Redirect /blog to /blogs
+  RewriteRule ^blog/?$ /blogs [R=301,L]
+
+  # Serve existing directory index or file
+  RewriteCond %{REQUEST_FILENAME} -d [OR]
+  RewriteCond %{REQUEST_FILENAME} -f
+  RewriteRule ^ - [L]
+
+  # Serve .html file if requested without extension
+  RewriteCond %{REQUEST_FILENAME}\.html -f
+  RewriteRule ^(.*)$ $1.html [L]
 </IfModule>
 
 # --- Enable Gzip Compression ---

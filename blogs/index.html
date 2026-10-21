@@ -127,6 +127,44 @@
 }
     </script>
 <link href="https://unpkg.com/lenis@1.2.3/dist/lenis.css" rel="stylesheet"/>
+<style>
+      /* Safety-net visibility for animated elements */
+      html:not(.ix-ready) [fade-up="true"],
+      html:not(.ix-ready) [fade="true"],
+      html:not(.ix-ready) [text-anim="true"],
+      html:not(.ix-ready) [title-anim="true"],
+      html:not(.ix-ready) [group-fade-up-item="true"],
+      html:not(.ix-ready) [group-fade-up-parent="true"],
+      html:not(.ix-ready) [scroll-to-text-color="true"],
+      html:not(.ix-ready) [scroll-to-color-change="true"] {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+      }
+      .footer-bottom, .footer-details, .footer-extra-link, .footer-form-with-content, .footer-menu-inner, .footer-section, .footer-left-content, .footer-top, .footer-details-with-form, .footer-menus, .h6 {
+        opacity: 1 !important;
+        visibility: visible !important;
+      }
+      .footer-details,
+      .footer-form-with-content,
+      .footer-extra-link,
+      .footer-bottom {
+        transform: none !important;
+      }
+      .section-label {
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+      }
+      .section-label-wrap {
+        display: block !important;
+      }
+      .w-webflow-badge {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+      }
+</style>
 </head>
 <body>
 <div class="bg-fixed-lines">
@@ -572,54 +610,40 @@
 <div class="footer-left-content">
 <div class="footer-top">
 <div class="footer-details-with-form">
-<div class="footer-details" fade-up="true">
-<a class="footer-logo-wrap w-inline-block" href="/"> <img alt="Logo" class="footer-logo" loading="lazy" src="/assets/images/cornerstone-logo-3.webp"/>
-</a>
-<p class="h6" text-anim="true">
-                Cornerstone Digital is a bold creative agency turning visionary ideas into high-impact digital experiences through strategic design and innovation.
+<div class="footer-details">
+<a class="footer-logo-wrap w-inline-block" href="/"><img alt="Logo" class="footer-logo" loading="lazy" src="/assets/images/cornerstone-logo-3.webp" style="width:165px;height:48px;object-fit:contain;object-position:left center"/></a>
+<p class="h6">
+                Cornerstone Digital is a digital growth agency helping local businesses attract more customers and scale faster through smart design and automation.
               </p>
 </div>
-<div class="footer-form-with-content" fade-up="true">
+<div class="footer-form-with-content">
 <div class="footer-form-title-with-para">
-<h5 class="h5">
-                  Never Miss an Update
-                </h5>
+<h5 class="h5">Never Miss an Update</h5>
 <p class="text-regular">
-                  Let's get you up to speed with all thingsdesign related. Just leave your email and
+                  Stay up to speed with tips on websites, AI tools and business growth. Just drop your email below.
                 </p>
 </div>
 <div class="footer-form-wrap w-form">
-<form data-name="Email Form" data-wf-element-id="9a69518b-e050-3795-6004-737e1cebd20a" data-wf-page-id="6a09633f3798c1672f163d57" id="email-form" method="get" name="email-form">
+<form data-name="Email Form" data-wf-element-id="9a69518b-e050-3795-6004-737e1cebd20a" data-wf-page-id="6a095db1dc6a0f2ae4ca641d" id="email-form" method="get" name="email-form">
 <div class="footer-form-btn-with-field">
-<input class="input-field footer-input-field w-input" data-name="Email" id="email" maxlength="256" name="email" placeholder="Enter you email" required="" type="email"/>
+<input class="input-field footer-input-field w-input" data-name="Email" id="email" maxlength="256" name="email" placeholder="Enter your email" required="" type="email"/>
 <div class="footer-form-btn-wrap">
-<input class="submit-button-hidden w-button" data-wait=" " type="submit" value=" "/>
-<a class="button w-inline-block" data-wf--button--variant="base" data-wf-component-id="cdf99ce3-251c-9193-8b04-467a43d07d21" data-wf-variant-state="base" href="#"> <div class="button-text-wrap">
-<div class="button-text first-text">
-                          Subscribe
-                        </div>
-<div class="button-text second-text">
-                          Subscribe
-                        </div>
+<input class="submit-button-hidden w-button" data-wait=" " type="submit" value=" "/><a class="button w-inline-block" data-wf--button--variant="base" data-wf-component-id="cdf99ce3-251c-9193-8b04-467a43d07d21" data-wf-variant-state="base" href="#"><div class="button-text-wrap">
+<div class="button-text first-text">Subscribe</div>
+<div class="button-text second-text">Subscribe</div>
 </div>
 <div class="button-icon-wrap">
-<img alt="Icon" class="button-icon first-icon" loading="lazy" src="https://cdn.prod.website-files.com/69f5c8889d124099c0296270/69f712e3165cd7d43787d333_arrow-left.svg"/>
-<img alt="Icon" class="button-icon second-icon" loading="lazy" src="https://cdn.prod.website-files.com/69f5c8889d124099c0296270/69f7162cac6ddd7efacf7d5a_arrow-icon-white.svg"/>
+<img alt="Icon" class="button-icon first-icon" loading="lazy" src="https://cdn.prod.website-files.com/69f5c8889d124099c0296270/69f712e3165cd7d43787d333_arrow-left.svg"/><img alt="Icon" class="button-icon second-icon" loading="lazy" src="https://cdn.prod.website-files.com/69f5c8889d124099c0296270/69f7162cac6ddd7efacf7d5a_arrow-icon-white.svg"/>
 </div>
-<div class="div-block-68">
-<div class="div-block-69">
-</div>
-<div class="div-block-69-copy">
-</div>
-</div>
-</a>
+<div class="button-border-box">
+<div class="button-border"></div>
+<div class="button-border-two"></div>
+</div></a>
 </div>
 </div>
 </form>
 <div class="message w-form-done">
-<div>
-                    Thank you! Your submission has been received!
-                  </div>
+<div>Thank you! Your submission has been received!</div>
 </div>
 <div class="message w-form-fail">
 <div>
@@ -630,62 +654,29 @@
 </div>
 </div>
 <div class="footer-menus" id="w-node-c15da65f-0721-dc4f-25b9-c433ea4820a9-0bb3f17a">
-<div class="footer-menu-inner" fade-up="true">
-<div class="footer-menu">
-<a class="footer-link" href="/">                Home
-</a>
-<a class="footer-link" href="/about">                About
-</a>
-<a aria-current="page" class="footer-link w--current" href="/blogs">                Blogs
-</a>
-<a class="footer-link" href="/services">                Services
-</a>
-<a class="footer-link" href="/projects">                Works
-</a>
+<div class="footer-extra-link" style="display: flex; flex-direction: column; gap: 16px;">
+<h6 class="text-white" style="font-size: 1.25rem; font-weight: 600; margin-bottom: 8px; color: white;">Contact Us</h6>
+<a class="footer-link-style-two" href="tel:07482765599">07482 765599</a>
+<span class="footer-link-style-two">1 Paul road, Essex , SO1 8EL, London</span>
 </div>
-<div class="footer-menu item-two">
-<a class="footer-link" href="/blog/impact-of-typography-on-global-brand-recall">                Blog Details
-</a>
-<a class="footer-link" href="/project/ecosphere">                Work Details
-</a>
-<a class="footer-link" href="/contact">                Contact
-</a>
-<a class="footer-link" href="/404">                404
-</a>
-<a class="footer-link" href="/utility/licenses">                Licenses
-</a>
-</div>
-<div class="footer-menu">
-<a class="footer-link" href="https://x.com/" target="_blank">                Twitter
-</a>
-<a class="footer-link" href="https://www.linkedin.com/" target="_blank">                LinkedIn
-</a>
-<a class="footer-link" href="https://www.instagram.com/" target="_blank">                Instagram
-</a>
-<a class="footer-link" href="https://dribbble.com/" target="_blank">                Dribble
-</a>
-<a class="footer-link" href="https://www.facebook.com/" target="_blank">                Facebook
-</a>
-</div>
-</div>
-<div class="footer-extra-link" fade-up="true">
-<a class="footer-link-style-two" href="/term-of-condition">              Term of Condition
-</a>
-<a class="footer-link-style-two" href="/privacy-policy">              Privacy Policy
-</a>
+<div class="footer-extra-link" style="display: flex; flex-direction: column; gap: 16px;">
+<a class="footer-link-style-two" href="/term-of-condition">Terms &amp; Conditions</a><a class="footer-link-style-two" href="/privacy-policy">Privacy Policy</a>
 </div>
 </div>
 </div>
-<div class="footer-bottom" fade="true">
+<!-- Footer Tagline -->
+<div style="border-top: 1px solid rgba(255,255,255,0.08); margin-top: 48px; padding-top: 48px; padding-bottom: 48px; text-align: center;">
+<p style="font-size: clamp(2.5rem, 6vw, 5rem); font-weight: 700; line-height: 1.05; letter-spacing: -0.03em; text-transform: uppercase; margin: 0; color: #ffffff;">
+            STOP BLENDING IN.
+          </p>
+<p style="font-size: clamp(2.5rem, 6vw, 5rem); font-weight: 700; line-height: 1.05; letter-spacing: -0.03em; text-transform: uppercase; margin: 0; color: #F7C324;">
+            START SCALING UP.
+          </p>
+</div>
+<div class="footer-bottom">
 <p class="footer-link-style-three">
-            Powered by
-            <a class="footer-link-style-three" href="https://webflow.com/" target="_blank">            Webflow
-</a>
-</p>
-<p class="footer-link-style-three">
-            Designed by
-            <a class="footer-link-style-three" href="https://flowdevz.com/" target="_blank">            Flowdevz
-</a>
+            Built by
+            <a class="footer-link-style-three" href="https://cornerstonedg.com/" target="_blank">Cornerstone Digital</a>
 </p>
 </div>
 </div>
