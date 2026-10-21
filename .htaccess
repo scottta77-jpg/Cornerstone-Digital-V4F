@@ -19,6 +19,17 @@ AddDefaultCharset UTF-8
   # Redirect /blog to /blogs
   RewriteRule ^blog/?$ /blogs [R=301,L]
 
+  # Legacy Template Blog Post 301 Redirects to Overhauled Articles
+  RewriteRule ^blog/minimalist-branding-for-modern-tech-startups(\.html)?/?$ /blog/small-business-website-cost-uk/ [R=301,L]
+  RewriteRule ^blog/maximizing-conversion-with-strategic-web-design(\.html)?/?$ /blog/ai-receptionist-vs-missed-call-text-back/ [R=301,L]
+  RewriteRule ^blog/impact-of-typography-on-global-brand-recall(\.html)?/?$ /blog/local-seo-ai-search-small-business/ [R=301,L]
+  RewriteRule ^blog/scaling-saas-products-with-high-performance-code(\.html)?/?$ /blog/small-business-automations/ [R=301,L]
+  RewriteRule ^blog/why-motion-design-enhances-user-retention(\.html)?/?$ /blog/core-web-vitals-small-business/ [R=301,L]
+  RewriteRule ^blog/creating-emotional-connections-through-digital-storytelling(\.html)?/?$ /blog/ask-for-google-reviews/ [R=301,L]
+  RewriteRule ^blog/designing-for-accessibility-in-luxury-interfaces(\.html)?/?$ /blog/website-accessibility-checklist-small-business/ [R=301,L]
+  RewriteRule ^blog/mastering-seo-strategy-for-creative-agencies(\.html)?/?$ /blog/website-builder-vs-web-designer/ [R=301,L]
+  RewriteRule ^blog/why-your-website-isnt-generating-enquiries(\.html)?/?$ /blog/website-not-generating-enquiries/ [R=301,L]
+
   # Serve existing directory index or file
   RewriteCond %{REQUEST_FILENAME} -d [OR]
   RewriteCond %{REQUEST_FILENAME} -f
