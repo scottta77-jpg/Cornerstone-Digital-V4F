@@ -1,0 +1,64 @@
+name: Scheduled Blog Publisher
+
+on:
+  schedule:
+    # Runs every Monday at 09:00 UTC (09:00 Europe/London throughout winter)
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+    inputs:
+      simulate_date:
+        description: 'Simulate date/time (e.g. 2026-10-26T09:00:00+00:00)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  scheduled_publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Scheduled Blog Publisher
+        run: |
+          if [ -n "${{ github.event.inputs.simulate_date }}" ]; then
+            python3 publish_scheduled_posts.py --now "${{ github.event.inputs.simulate_date }}"
+          else
+            python3 publish_scheduled_posts.py
+          fi
+
+      - name: Commit and Push if New Articles Published
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "New articles released. Committing changes..."
+            git add .
+            git commit -m "chore(blog): release scheduled weekly article"
+            git push origin main
+          else
+            echo "No new articles due for release."
+          fi
+
+      - name: Deploy to Krystal
+        if: success()
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: p142.lon.krystal.io
+          username: github@cornerstonedg.com
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          server-dir: /
+          exclude: |
+            **/.git*
+            **/.git*/**
+            .cpanel.yml
