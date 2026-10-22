@@ -1,0 +1,245 @@
+[
+  {
+    "post_id": "01",
+    "publication_instructions": "Blueprint only. Set the actual canonical URL, public image URL, publication date and modification date in the CMS. Do not publish metadata that differs from the visible article.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Why your website isn't generating enquiries: 9 checks before a redesign",
+      "description": "Find out why your website gets visitors but few enquiries. Use nine practical checks to spot problems with messaging, trust, forms and follow-up.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cornerstonedg.com/blog/website-not-generating-enquiries/"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "inLanguage": "en-GB",
+      "articleSection": "Web design",
+      "wordCount": 782
+    }
+  },
+  {
+    "post_id": "02",
+    "publication_instructions": "Blueprint only. Set the actual canonical URL, public image URL, publication date and modification date in the CMS. Do not publish metadata that differs from the visible article.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "How much does a small business website cost? A UK buying guide",
+      "description": "Compare small business website costs in the UK. Understand scope, monthly plans, running costs, ownership and the questions to ask before buying.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cornerstonedg.com/blog/small-business-website-cost-uk/"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "inLanguage": "en-GB",
+      "articleSection": "Strategy",
+      "wordCount": 738
+    }
+  },
+  {
+    "post_id": "03",
+    "publication_instructions": "Blueprint only. Set the actual canonical URL, public image URL, publication date and modification date in the CMS. Do not publish metadata that differs from the visible article.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "AI receptionist vs missed-call text-back: which does your business need?",
+      "description": "Should you use an AI receptionist or missed-call text-back? Compare the jobs they handle, limitations, costs and checks for a UK service business.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cornerstonedg.com/blog/ai-receptionist-vs-missed-call-text-back/"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "inLanguage": "en-GB",
+      "articleSection": "AI & automation",
+      "wordCount": 693
+    }
+  },
+  {
+    "post_id": "04",
+    "publication_instructions": "Blueprint only. Set the actual canonical URL, public image URL, publication date and modification date in the CMS. Do not publish metadata that differs from the visible article.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Local SEO and AI search: how small businesses can be easier to find",
+      "description": "Improve how customers find and understand your business through local SEO and AI search. Learn which website, business profile and content fixes matter.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cornerstonedg.com/blog/local-seo-ai-search-small-business/"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "inLanguage": "en-GB",
+      "articleSection": "Search & growth",
+      "wordCount": 753
+    }
+  },
+  {
+    "post_id": "05",
+    "publication_instructions": "Blueprint only. Set the actual canonical URL, public image URL, publication date and modification date in the CMS. Do not publish metadata that differs from the visible article.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "5 small business automations to start with, and how to measure them",
+      "description": "Explore five practical small business automations. Learn what to connect, where human checks belong and how to calculate the time you actually save.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cornerstonedg.com/blog/small-business-automations/"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "inLanguage": "en-GB",
+      "articleSection": "Business automation",
+      "wordCount": 724
+    }
+  },
+  {
+    "post_id": "06",
+    "publication_instructions": "Blueprint only. Set the actual canonical URL, public image URL, publication date and modification date in the CMS. Do not publish metadata that differs from the visible article.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Core Web Vitals for small businesses: what to fix first",
+      "description": "Understand LCP, INP and CLS in plain English. Learn how to check Core Web Vitals and prioritise website fixes without chasing a perfect speed score.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cornerstonedg.com/blog/core-web-vitals-small-business/"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "inLanguage": "en-GB",
+      "articleSection": "Website performance",
+      "wordCount": 738
+    }
+  },
+  {
+    "post_id": "07",
+    "publication_instructions": "Blueprint only. Set the actual canonical URL, public image URL, publication date and modification date in the CMS. Do not publish metadata that differs from the visible article.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "How to ask for Google reviews without review gating",
+      "description": "Learn how to ask customers for Google reviews, write a neutral request and automate follow-ups without filtering out unhappy customers or offering rewards.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cornerstonedg.com/blog/ask-for-google-reviews/"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "inLanguage": "en-GB",
+      "articleSection": "Customer growth",
+      "wordCount": 735
+    }
+  },
+  {
+    "post_id": "08",
+    "publication_instructions": "Blueprint only. Set the actual canonical URL, public image URL, publication date and modification date in the CMS. Do not publish metadata that differs from the visible article.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "A practical website accessibility checklist for small businesses",
+      "description": "Use this practical website accessibility checklist to review navigation, readability, forms and booking journeys, then identify where expert testing is needed.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cornerstonedg.com/blog/website-accessibility-checklist-small-business/"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "inLanguage": "en-GB",
+      "articleSection": "Web design",
+      "wordCount": 669
+    }
+  },
+  {
+    "post_id": "09",
+    "publication_instructions": "Blueprint only. Set the actual canonical URL, public image URL, publication date and modification date in the CMS. Do not publish metadata that differs from the visible article.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Website builder or web designer? How to choose for your small business",
+      "description": "Choose between a website builder, web designer or custom build. Compare time, scope, support, ownership and the work your small business actually needs.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cornerstonedg.com/blog/website-builder-vs-web-designer/"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "inLanguage": "en-GB",
+      "articleSection": "Strategy",
+      "wordCount": 702
+    }
+  }
+]

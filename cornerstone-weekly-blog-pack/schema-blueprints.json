@@ -1,0 +1,282 @@
+[
+  {
+    "post_id": "10",
+    "planned_publish_at": "2026-10-26T09:00:00+00:00",
+    "instructions": "Use the schema object as the basis for the article page JSON-LD. Set actual datePublished/dateModified and the final public image URL in the CMS at publication. Keep scheduled articles out of public output until due. The outer instructions object is not schema markup.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Google Business Profile or website: what should each do for your business?",
+      "description": "Understand how Google Business Profile and your website work together. Check business details, service information, contact routes and local enquiry journeys.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cornerstonedg.com/blog/google-business-profile-vs-website/"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "inLanguage": "en-GB",
+      "articleSection": "Local visibility",
+      "wordCount": 737
+    }
+  },
+  {
+    "post_id": "11",
+    "planned_publish_at": "2026-11-02T09:00:00+00:00",
+    "instructions": "Use the schema object as the basis for the article page JSON-LD. Set actual datePublished/dateModified and the final public image URL in the CMS at publication. Keep scheduled articles out of public output until due. The outer instructions object is not schema markup.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Landing page vs service page: where should you send your ad traffic?",
+      "description": "Compare landing pages and service pages for paid advertising. Learn when to use each, what to include and how to judge the quality of the enquiries.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cornerstonedg.com/blog/landing-page-vs-service-page/"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "inLanguage": "en-GB",
+      "articleSection": "Web design",
+      "wordCount": 736
+    }
+  },
+  {
+    "post_id": "12",
+    "planned_publish_at": "2026-11-09T09:00:00+00:00",
+    "instructions": "Use the schema object as the basis for the article page JSON-LD. Set actual datePublished/dateModified and the final public image URL in the CMS at publication. Keep scheduled articles out of public output until due. The outer instructions object is not schema markup.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "What should your contact form ask? A practical guide to better enquiries",
+      "description": "Choose useful contact-form questions for your business. Balance lead quality, customer effort, accessibility, privacy and reliable enquiry delivery.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cornerstonedg.com/blog/contact-form-questions-better-enquiries/"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "inLanguage": "en-GB",
+      "articleSection": "Enquiry journeys",
+      "wordCount": 671
+    }
+  },
+  {
+    "post_id": "13",
+    "planned_publish_at": "2026-11-16T09:00:00+00:00",
+    "instructions": "Use the schema object as the basis for the article page JSON-LD. Set actual datePublished/dateModified and the final public image URL in the CMS at publication. Keep scheduled articles out of public output until due. The outer instructions object is not schema markup.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Which marketing brings paying customers? A simple lead-tracking system",
+      "description": "Find out which marketing produces useful enquiries and customers. Build a simple tracking process across campaigns, website forms and sales outcomes.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cornerstonedg.com/blog/track-marketing-paying-customers/"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "inLanguage": "en-GB",
+      "articleSection": "Measurement",
+      "wordCount": 709
+    }
+  },
+  {
+    "post_id": "14",
+    "planned_publish_at": "2026-11-23T09:00:00+00:00",
+    "instructions": "Use the schema object as the basis for the article page JSON-LD. Set actual datePublished/dateModified and the final public image URL in the CMS at publication. Keep scheduled articles out of public output until due. The outer instructions object is not schema markup.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Website maintenance: what should happen after launch?",
+      "description": "Learn what website maintenance should cover after launch: access, backups, updates, form checks, renewals, support responsibilities and useful reporting.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cornerstonedg.com/blog/website-maintenance-after-launch/"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "inLanguage": "en-GB",
+      "articleSection": "Website care",
+      "wordCount": 709
+    }
+  },
+  {
+    "post_id": "15",
+    "planned_publish_at": "2026-11-30T09:00:00+00:00",
+    "instructions": "Use the schema object as the basis for the article page JSON-LD. Set actual datePublished/dateModified and the final public image URL in the CMS at publication. Keep scheduled articles out of public output until due. The outer instructions object is not schema markup.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "AI chatbot or live chat: which belongs on your small business website?",
+      "description": "Compare AI chatbots, rule-based chat and staffed live chat for a small business. Understand knowledge, handover, coverage, costs and practical testing.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cornerstonedg.com/blog/ai-chatbot-vs-live-chat/"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "inLanguage": "en-GB",
+      "articleSection": "AI & automation",
+      "wordCount": 718
+    }
+  },
+  {
+    "post_id": "16",
+    "planned_publish_at": "2026-12-07T09:00:00+00:00",
+    "instructions": "Use the schema object as the basis for the article page JSON-LD. Set actual datePublished/dateModified and the final public image URL in the CMS at publication. Keep scheduled articles out of public output until due. The outer instructions object is not schema markup.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "How to create useful service-area pages without duplicating your website",
+      "description": "Build useful service-area pages with accurate coverage, local project evidence and practical details. Learn when a separate location page adds real value.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cornerstonedg.com/blog/useful-service-area-pages/"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "inLanguage": "en-GB",
+      "articleSection": "Local visibility",
+      "wordCount": 732
+    }
+  },
+  {
+    "post_id": "17",
+    "planned_publish_at": "2026-12-14T09:00:00+00:00",
+    "instructions": "Use the schema object as the basis for the article page JSON-LD. Set actual datePublished/dateModified and the final public image URL in the CMS at publication. Keep scheduled articles out of public output until due. The outer instructions object is not schema markup.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "How to turn a finished project into a case study customers can trust",
+      "description": "Create a trustworthy customer case study using the original brief, real project evidence, client approval and clearly explained outcomes or limitations.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cornerstonedg.com/blog/customer-case-study-guide/"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "inLanguage": "en-GB",
+      "articleSection": "Brand & content",
+      "wordCount": 730
+    }
+  },
+  {
+    "post_id": "18",
+    "planned_publish_at": "2026-12-21T09:00:00+00:00",
+    "instructions": "Use the schema object as the basis for the article page JSON-LD. Set actual datePublished/dateModified and the final public image URL in the CMS at publication. Keep scheduled articles out of public output until due. The outer instructions object is not schema markup.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Christmas opening hours: keep your website, bookings and enquiries in sync",
+      "description": "Keep Christmas opening hours consistent across your website, Google profile, bookings and automated replies, with clear expectations for customer enquiries.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cornerstonedg.com/blog/christmas-opening-hours-website-bookings/"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "inLanguage": "en-GB",
+      "articleSection": "Customer journeys",
+      "wordCount": 733
+    }
+  },
+  {
+    "post_id": "19",
+    "planned_publish_at": "2026-12-28T09:00:00+00:00",
+    "instructions": "Use the schema object as the basis for the article page JSON-LD. Set actual datePublished/dateModified and the final public image URL in the CMS at publication. Keep scheduled articles out of public output until due. The outer instructions object is not schema markup.",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "How to build a practical 90-day digital marketing plan for your small business",
+      "description": "Build a practical 90-day digital marketing plan for your small business. Set one objective, prioritise useful work and measure enquiries and customer outcomes.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cornerstonedg.com/blog/90-day-digital-marketing-plan-small-business/"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cornerstone Digital",
+        "url": "https://cornerstonedg.com/"
+      },
+      "inLanguage": "en-GB",
+      "articleSection": "Planning & strategy",
+      "wordCount": 765
+    }
+  }
+]

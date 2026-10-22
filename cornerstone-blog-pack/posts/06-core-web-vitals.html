@@ -1,0 +1,52 @@
+<p>A slow website is frustrating when a customer is trying to check a service, open a menu or submit an enquiry. Core Web Vitals help you examine parts of that experience, but they are more useful as a diagnosis than as a trophy score.</p>
+<p><strong>The short answer:</strong> check how quickly the main content appears, how promptly the page responds and whether its layout moves unexpectedly. Use real visitor data where available, investigate problems with controlled tests and fix the important customer journeys first.</p>
+<h2>What are LCP, INP and CLS?</h2>
+<p>Google&#39;s web.dev documentation describes three Core Web Vitals. Their “good” thresholds are assessed at the 75th percentile of visits, considered separately for mobile and desktop:</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>What it measures</th>
+<th>Good threshold</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Largest Contentful Paint, or LCP</td>
+<td>When the largest visible content element appears</td>
+<td>2.5 seconds or less</td>
+</tr>
+<tr>
+<td>Interaction to Next Paint, or INP</td>
+<td>How quickly the page visually responds to interactions</td>
+<td>200 milliseconds or less</td>
+</tr>
+<tr>
+<td>Cumulative Layout Shift, or CLS</td>
+<td>Unexpected movement of page elements</td>
+<td>0.1 or less</td>
+</tr>
+</tbody></table>
+<p>These are experience thresholds, not a requirement that every part of a page finish loading in under a second. <a href="https://web.dev/articles/vitals">Source: web.dev</a>.</p>
+<h2>Begin with the pages customers actually use</h2>
+<p>Check the homepage, important service pages, popular articles and the booking or contact journey. A fast homepage does not tell you whether a booking widget becomes difficult to use on another page.</p>
+<p>Use a phone as well as a desktop. Open menus, accept or reject optional cookies where relevant, navigate the page and complete the form. Record the problem you see before deciding how to fix it.</p>
+<h2>Understand field data and lab tests</h2>
+<p>Field data reflects real visits across different devices and connections. A lab test runs in a controlled setup and helps reproduce a problem. They answer different questions, so the results may differ.</p>
+<p>PageSpeed Insights can show available field data alongside lab diagnostics. Some smaller sites will not have enough public field data for a particular page. An absent result does not mean that the page has failed.</p>
+<p>Use the diagnostics to identify likely causes, then check whether the change improves the experience. Avoid repeatedly tuning a page around one isolated test run.</p>
+<h2>If the main content appears late</h2>
+<p>Investigate the element reported as LCP. Is it a large photograph, a banner or a block of text waiting for a font? Check the image size, delivery and loading behaviour, alongside server and rendering delays.</p>
+<p>A large decorative video can add work without helping the customer make a decision. Consider whether a carefully chosen still image would serve the page better. Essential first-screen content should not be delayed by an unnecessary loading effect.</p>
+<h2>If buttons and menus feel unresponsive</h2>
+<p>Look at the work the browser is doing around an interaction. Heavy scripts, complex animations and third-party widgets can contribute to delays. Remove tools that no longer serve a clear purpose.</p>
+<p>Test essential integrations individually. A booking calendar or chat tool may be useful, but it still needs to work comfortably on an ordinary phone. Keep the customer action available if an optional widget fails.</p>
+<h2>If the layout jumps while someone is using it</h2>
+<p>Reserve space for images, embeds and other content before it arrives. Watch banners, notices and font changes that unexpectedly move a button or paragraph.</p>
+<p>A customer should not tap “Submit” and hit a different element because the layout changed. Reproduce the issue during the actual task, then confirm the fix on different screen sizes.</p>
+<h2>Will passing guarantee better rankings?</h2>
+<p>No. Google says Core Web Vitals are used by its ranking systems, while good scores do not guarantee top rankings. Relevant, useful content and the wider search context still matter. <a href="https://developers.google.com/search/docs/appearance/core-web-vitals">Source: Google Search Central</a>.</p>
+<p>The commercial benefit also needs measurement. If a form becomes easier to use, track successful submissions and qualified enquiries over a suitable period. Do not assume a universal percentage increase for every second removed.</p>
+<h2>A sensible order for improvements</h2>
+<p>Fix broken customer actions first. Then address clearly poor performance on valuable pages, remove unnecessary weight and repeat the same tests. Monitor field results as new visits accumulate.</p>
+<p>Keep a record of what changed and when. That helps separate a real improvement from changes in traffic, campaigns or test conditions. Combine performance work with our <a href="/blog/website-not-generating-enquiries/">website enquiry checks</a> so the page is clear as well as responsive.</p>
+<p><a href="https://cornerstonedg.com/#booking">Book a 15-minute discovery call</a> with Cornerstone Digital to discuss the performance problems affecting your customers.</p>

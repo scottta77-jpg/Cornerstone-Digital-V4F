@@ -1,0 +1,89 @@
+# Why your website isn't generating enquiries: 9 checks before a redesign
+
+**Category:** Web design
+
+**Pillar:** Design & Build
+
+**Author Name:** Cornerstone Digital
+
+**Read Time Minutes:** 4
+
+**Primary Query:** website not generating enquiries
+
+**Slug:** website-not-generating-enquiries
+
+**Seo Title:** Website Not Generating Enquiries? 9 Checks to Make
+
+**Meta Description:** Find out why your website gets visitors but few enquiries. Use nine practical checks to spot problems with messaging, trust, forms and follow-up.
+
+**Excerpt:** Getting website visitors but few enquiries? Check your message, proof, contact journey and follow-up before paying for a redesign.
+
+**Thumbnail:** thumbnails/01-website-enquiries.webp
+
+**Thumbnail Alt:** Yellow doorway within charcoal website panels, illustrating an easier path to enquiry.
+
+## Article body
+
+Your website looks presentable. People visit it. Yet the enquiries are inconsistent, low quality or missing altogether. Before replacing the whole site, find out where the journey breaks.
+
+**The short answer:** a website can lose enquiries because it attracts the wrong visitors, leaves important questions unanswered, makes contact difficult or fails to pass leads to someone who will respond. Check each stage separately. A new design only helps if it fixes the underlying problem.
+
+## 1. Are the right people arriving?
+
+Open your analytics and look at the pages people enter through. Compare these with the services you actually want to sell. Someone reading a general advice article may have a different intention from someone searching for a quote.
+
+Check geography as well. A Brentwood service business can receive visitors from across the country while needing customers within a manageable travel area. More traffic is useful only when it includes people you can serve.
+
+## 2. Does the first screen explain the offer?
+
+Show your homepage to someone unfamiliar with the business. Ask what you do, who it is for and where you work. If they need an explanation, the opening message needs work.
+
+For a hypothetical heating company, “Boiler repairs and servicing in Brentwood” gives a customer more information than “Excellence through innovation”. Follow it with a relevant reason to choose you and a clear action.
+
+## 3. Do your service pages answer buying questions?
+
+A list of services leaves customers to fill in the gaps. Explain what is included, what happens next, where you operate and any limits that affect suitability. Add a genuine project example where you have one.
+
+If price varies, explain the main cost drivers and how you prepare a quote. A useful explanation of pricing can remove uncertainty without promising a fixed price for every job.
+
+## 4. Can people check that you are credible?
+
+Use real work, attributable reviews and relevant qualifications. Put the evidence near the service or decision it supports. An example of a completed kitchen installation belongs beside kitchen installation information.
+
+Avoid invented numbers and anonymous praise that could describe any company. A project description with a clear brief, photographs and an explanation of the work is more useful than an unsupported claim to be the area's leading provider.
+
+## 5. Is there an obvious next step?
+
+Choose the action that fits the sale. An emergency service may need a prominent phone number. A consultancy may need a discovery call. A quote-based business may need a short enquiry form.
+
+Explain what follows the click. “Request a quote” becomes easier to act on when the page also explains what information you need and when a person will respond. Only publish response times your team can meet.
+
+## 6. Does the mobile journey work?
+
+Use your own phone to find a service, read its details and make contact. Watch for sticky elements covering buttons, menus that are hard to close and text that needs excessive zooming.
+
+Test the journey on an ordinary connection. Performance scores can help diagnose issues, but the practical question is whether someone can complete the task comfortably. Our [Core Web Vitals guide](/blog/core-web-vitals-small-business/) explains what to measure.
+
+## 7. Does the form actually deliver?
+
+Submit a real test enquiry. Check the success message, destination inbox, spam folder and customer acknowledgement. Confirm that someone knows who owns the reply.
+
+Ask only for information needed at this stage. If a customer must complete a lengthy questionnaire before asking a basic question, consider whether those details can wait until the conversation begins.
+
+## 8. What happens after an enquiry arrives?
+
+An instant acknowledgement confirms receipt. It does not resolve the customer's request. Give the enquiry an owner and provide a realistic next step.
+
+If missed calls are the main gap, compare [AI receptionists and missed-call text-back](/blog/ai-receptionist-vs-missed-call-text-back/) before choosing a tool. A simple callback process may be enough for a low-volume business.
+
+## 9. Are you counting meaningful outcomes?
+
+Record successful form submissions, booked consultations and qualified enquiries. A phone-link click shows interest, but does not prove a call connected or became a customer. Where possible, connect marketing activity with the later sales outcome.
+
+For illustration, 12 qualified enquiries from 600 visits is a 2% qualified-enquiry rate. That arithmetic describes an example, not a target or industry benchmark. Compare your own periods using consistent definitions.
+
+## Fix the weakest stage first
+
+Write down one problem at each stage: finding you, understanding you, trusting you, contacting you and getting a response. Prioritise the clearest obstacle and measure what changes. That gives a redesign a practical brief if one is needed.
+
+Cornerstone Digital helps local businesses connect their website, enquiry handling and growth strategy. [Book a 15-minute discovery call](https://cornerstonedg.com/#booking) to discuss where your customer journey needs attention.

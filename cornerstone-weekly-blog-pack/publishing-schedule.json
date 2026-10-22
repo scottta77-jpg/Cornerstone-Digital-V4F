@@ -1,0 +1,113 @@
+{
+  "site": "https://cornerstonedg.com/",
+  "timezone": "Europe/London",
+  "requested_cadence": "one post every Monday for ten consecutive weeks",
+  "first_date": "2026-10-26",
+  "last_date": "2026-12-28",
+  "default_local_time": "09:00:00",
+  "time_is_assumption": true,
+  "schedule_activation_status": "prepared_not_activated",
+  "implementation_owner": "Antigravity / existing website CMS",
+  "posts": [
+    {
+      "week": 1,
+      "post_id": "10",
+      "title": "Google Business Profile or website: what should each do for your business?",
+      "slug": "google-business-profile-vs-website",
+      "planned_publish_at": "2026-10-26T09:00:00+00:00",
+      "content_file": "posts/10-google-profile-website.md",
+      "thumbnail": "thumbnails/10-google-profile-website.webp",
+      "requested_cms_state": "scheduled"
+    },
+    {
+      "week": 2,
+      "post_id": "11",
+      "title": "Landing page vs service page: where should you send your ad traffic?",
+      "slug": "landing-page-vs-service-page",
+      "planned_publish_at": "2026-11-02T09:00:00+00:00",
+      "content_file": "posts/11-landing-page-service-page.md",
+      "thumbnail": "thumbnails/11-landing-page-service-page.webp",
+      "requested_cms_state": "scheduled"
+    },
+    {
+      "week": 3,
+      "post_id": "12",
+      "title": "What should your contact form ask? A practical guide to better enquiries",
+      "slug": "contact-form-questions-better-enquiries",
+      "planned_publish_at": "2026-11-09T09:00:00+00:00",
+      "content_file": "posts/12-contact-form-questions.md",
+      "thumbnail": "thumbnails/12-contact-form-questions.webp",
+      "requested_cms_state": "scheduled"
+    },
+    {
+      "week": 4,
+      "post_id": "13",
+      "title": "Which marketing brings paying customers? A simple lead-tracking system",
+      "slug": "track-marketing-paying-customers",
+      "planned_publish_at": "2026-11-16T09:00:00+00:00",
+      "content_file": "posts/13-marketing-lead-tracking.md",
+      "thumbnail": "thumbnails/13-marketing-lead-tracking.webp",
+      "requested_cms_state": "scheduled"
+    },
+    {
+      "week": 5,
+      "post_id": "14",
+      "title": "Website maintenance: what should happen after launch?",
+      "slug": "website-maintenance-after-launch",
+      "planned_publish_at": "2026-11-23T09:00:00+00:00",
+      "content_file": "posts/14-website-maintenance.md",
+      "thumbnail": "thumbnails/14-website-maintenance.webp",
+      "requested_cms_state": "scheduled"
+    },
+    {
+      "week": 6,
+      "post_id": "15",
+      "title": "AI chatbot or live chat: which belongs on your small business website?",
+      "slug": "ai-chatbot-vs-live-chat",
+      "planned_publish_at": "2026-11-30T09:00:00+00:00",
+      "content_file": "posts/15-chatbot-live-chat.md",
+      "thumbnail": "thumbnails/15-chatbot-live-chat.webp",
+      "requested_cms_state": "scheduled"
+    },
+    {
+      "week": 7,
+      "post_id": "16",
+      "title": "How to create useful service-area pages without duplicating your website",
+      "slug": "useful-service-area-pages",
+      "planned_publish_at": "2026-12-07T09:00:00+00:00",
+      "content_file": "posts/16-service-area-pages.md",
+      "thumbnail": "thumbnails/16-service-area-pages.webp",
+      "requested_cms_state": "scheduled"
+    },
+    {
+      "week": 8,
+      "post_id": "17",
+      "title": "How to turn a finished project into a case study customers can trust",
+      "slug": "customer-case-study-guide",
+      "planned_publish_at": "2026-12-14T09:00:00+00:00",
+      "content_file": "posts/17-customer-case-study.md",
+      "thumbnail": "thumbnails/17-customer-case-study.webp",
+      "requested_cms_state": "scheduled"
+    },
+    {
+      "week": 9,
+      "post_id": "18",
+      "title": "Christmas opening hours: keep your website, bookings and enquiries in sync",
+      "slug": "christmas-opening-hours-website-bookings",
+      "planned_publish_at": "2026-12-21T09:00:00+00:00",
+      "content_file": "posts/18-christmas-opening-hours.md",
+      "thumbnail": "thumbnails/18-christmas-opening-hours.webp",
+      "requested_cms_state": "scheduled"
+    },
+    {
+      "week": 10,
+      "post_id": "19",
+      "title": "How to build a practical 90-day digital marketing plan for your small business",
+      "slug": "90-day-digital-marketing-plan-small-business",
+      "planned_publish_at": "2026-12-28T09:00:00+00:00",
+      "content_file": "posts/19-ninety-day-marketing-plan.md",
+      "thumbnail": "thumbnails/19-ninety-day-marketing-plan.webp",
+      "requested_cms_state": "scheduled"
+    }
+  ]
+}
