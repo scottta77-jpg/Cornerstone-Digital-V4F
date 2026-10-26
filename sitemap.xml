@@ -27,7 +27,7 @@
   <url>
     <loc>https://cornerstonedg.com/blogs/</loc>
     <priority>0.8</priority>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-26</lastmod>
   </url>
   <url>
     <loc>https://cornerstonedg.com/blog/website-not-generating-enquiries/</loc>
@@ -72,6 +72,11 @@
   <url>
     <loc>https://cornerstonedg.com/blog/website-builder-vs-web-designer/</loc>
     <lastmod>2026-10-21</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cornerstonedg.com/blog/google-business-profile-vs-website/</loc>
+    <lastmod>2026-10-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
