@@ -2,7 +2,7 @@
   "site": "https://cornerstonedg.com/",
   "timezone": "Europe/London",
   "default_publish_time": "09:00:00",
-  "last_run_at": "2026-10-26T15:42:47.777758+00:00",
+  "last_run_at": "2026-11-02T19:01:59.933599+00:00",
   "articles": {
     "01": {
       "id": "01",
@@ -77,9 +77,9 @@
     "11": {
       "id": "11",
       "slug": "landing-page-vs-service-page",
-      "status": "scheduled",
+      "status": "published",
       "planned_publish_at": "2026-11-02T09:00:00+00:00",
-      "published_at": null
+      "published_at": "2026-11-02T09:00:00+00:00"
     },
     "12": {
       "id": "12",
