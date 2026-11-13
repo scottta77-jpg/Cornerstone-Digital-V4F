@@ -19,7 +19,7 @@ for (const file of filesToFix) {
     let content = fs.readFileSync(filePath, 'utf8');
     
     // Remove the old inline-styled contact block under the logo
-    const oldBlockRegex = /<div style="margin-top: 16px; display: flex; flex-direction: column; gap: 8px;">\s*<a href="tel:07482765599"[\s\S]*?<\/p>\s*<\/div>/g;
+    const oldBlockRegex = /<div style="margin-top: 16px; display: flex; flex-direction: column; gap: 8px;">\s*<a href="tel:[^"]*"[\s\S]*?<\/p>\s*<\/div>/g;
     content = content.replace(oldBlockRegex, '');
     
     // Add the new "Contact Us" column to the footer-menus
@@ -28,8 +28,7 @@ for (const file of filesToFix) {
     const replacement = `$1
             <div fade-up="true" class="footer-extra-link" style="display: flex; flex-direction: column; gap: 16px;">
               <h6 class="text-white" style="font-size: 1.25rem; font-weight: 600; margin-bottom: 8px; color: white;">Contact Us</h6>
-              <a href="tel:07482765599" class="footer-link-style-two">07482 765599</a>
-              <span class="footer-link-style-two">1 Paul road, Essex , SO1 8EL, London</span>
+              <span class="footer-link-style-two">Brentwood, Essex</span>
             </div>
             
             <div fade-up="true" class="footer-extra-link" style="display: flex; flex-direction: column; gap: 16px;">
