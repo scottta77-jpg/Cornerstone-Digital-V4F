@@ -27,7 +27,7 @@
   <url>
     <loc>https://cornerstonedg.com/blogs/</loc>
     <priority>0.8</priority>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-16</lastmod>
   </url>
   <url>
     <loc>https://cornerstonedg.com/blog/website-not-generating-enquiries/</loc>
@@ -87,6 +87,11 @@
   <url>
     <loc>https://cornerstonedg.com/blog/contact-form-questions-better-enquiries/</loc>
     <lastmod>2026-11-09</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cornerstonedg.com/blog/track-marketing-paying-customers/</loc>
+    <lastmod>2026-11-16</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
