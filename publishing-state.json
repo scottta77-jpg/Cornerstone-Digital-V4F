@@ -2,7 +2,7 @@
   "site": "https://cornerstonedg.com/",
   "timezone": "Europe/London",
   "default_publish_time": "09:00:00",
-  "last_run_at": "2026-11-16T19:09:20.192220+00:00",
+  "last_run_at": "2026-11-23T20:47:28.327772+00:00",
   "articles": {
     "01": {
       "id": "01",
@@ -98,9 +98,9 @@
     "14": {
       "id": "14",
       "slug": "website-maintenance-after-launch",
-      "status": "scheduled",
+      "status": "published",
       "planned_publish_at": "2026-11-23T09:00:00+00:00",
-      "published_at": null
+      "published_at": "2026-11-23T09:00:00+00:00"
     },
     "15": {
       "id": "15",
